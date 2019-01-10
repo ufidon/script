@@ -1,0 +1,29 @@
+# 1. Show the NAT network is working
+	# On the Windows host, find the ip configuration of Ethernet adapter VMware Network Adapter VMnet8: (Not required for VirtualBox)
+	ipconfig /all
+	
+	# On the Windows Server 2012 VM, find its ip configuration of the Ethernet adapter connected to the NAT:
+	ipconfig /all
+
+	
+	# On the Ubuntu Linux VM (SEED Ubuntu 16.04 or Ubuntu 18.04.1 LTS), find its ip configuration of the Ethernet adapter connected to the NAT: 
+	ifconfig -a
+	
+	# from one VM ping the other VM
+
+# 2. the process you run the scripts
+	# On each VM, open a terminal, run the following code to get the script files
+	git clone https://github.com/ufidon/its372.git
+	
+	# On the Windows Server 2012 VM, 
+		## open the ConEmu and run the following scripts inside it:
+		zip2barcode.cmd
+		onedigit.bat
+		
+		## open the Powershell and run the following script inside it:
+		chineseyear.ps1
+	
+	
+	# On the Ubuntu Linux VM, open a terminal and run the following script:
+	add2nums.sh
+	
