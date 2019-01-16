@@ -1,0 +1,560 @@
+== storage management ==
+
+# 1. Disk management
+	# 1. Add a 1GB disk to the Windows Server 2012 VM
+	
+	# 2. Use command DISKPART complete the following tasks
+		
+
+		Administrator@XPC C:\Users\Administrator
+		# diskpart
+
+		Microsoft DiskPart version 6.3.9600
+
+		Copyright (C) 1999-2013 Microsoft Corporation.
+		On computer: XPC
+
+		DISKPART> help
+
+		Microsoft DiskPart version 6.3.9600
+
+		ACTIVE      - Mark the selected partition as active.
+		ADD         - Add a mirror to a simple volume.
+		ASSIGN      - Assign a drive letter or mount point to the selected volume.
+		ATTRIBUTES  - Manipulate volume or disk attributes.
+		ATTACH      - Attaches a virtual disk file.
+		AUTOMOUNT   - Enable and disable automatic mounting of basic volumes.
+		BREAK       - Break a mirror set.
+		CLEAN       - Clear the configuration information, or all information, off the
+					  disk.
+		COMPACT     - Attempts to reduce the physical size of the file.
+		CONVERT     - Convert between different disk formats.
+		CREATE      - Create a volume, partition or virtual disk.
+		DELETE      - Delete an object.
+		DETAIL      - Provide details about an object.
+		DETACH      - Detaches a virtual disk file.
+		EXIT        - Exit DiskPart.
+		EXTEND      - Extend a volume.
+		EXPAND      - Expands the maximum size available on a virtual disk.
+		FILESYSTEMS - Display current and supported file systems on the volume.
+		FORMAT      - Format the volume or partition.
+		GPT         - Assign attributes to the selected GPT partition.
+		HELP        - Display a list of commands.
+		IMPORT      - Import a disk group.
+		INACTIVE    - Mark the selected partition as inactive.
+		LIST        - Display a list of objects.
+		MERGE       - Merges a child disk with its parents.
+		ONLINE      - Online an object that is currently marked as offline.
+		OFFLINE     - Offline an object that is currently marked as online.
+		RECOVER     - Refreshes the state of all disks in the selected pack.
+					  Attempts recovery on disks in the invalid pack, and
+					  resynchronizes mirrored volumes and RAID5 volumes
+					  that have stale plex or parity data.
+		REM         - Does nothing. This is used to comment scripts.
+		REMOVE      - Remove a drive letter or mount point assignment.
+		REPAIR      - Repair a RAID-5 volume with a failed member.
+		RESCAN      - Rescan the computer looking for disks and volumes.
+		RETAIN      - Place a retained partition under a simple volume.
+		SAN         - Display or set the SAN policy for the currently booted OS.
+		SELECT      - Shift the focus to an object.
+		SETID       - Change the partition type.
+		SHRINK      - Reduce the size of the selected volume.
+		UNIQUEID    - Displays or sets the GUID partition table (GPT) identifier or
+					  master boot record (MBR) signature of a disk.
+
+		DISKPART> list disk
+
+		  Disk ###  Status         Size     Free     Dyn  Gpt
+		  --------  -------------  -------  -------  ---  ---
+		  Disk 0    Online           60 GB      0 B
+		  Disk 1    Offline        1024 MB  1024 MB
+
+		DISKPART> select disk 1
+
+		Disk 1 is now the selected disk.
+
+		DISKPART> online disk
+
+		DiskPart successfully onlined the selected disk.
+
+		DISKPART> detail disk
+
+		VMware, VMware Virtual S SCSI Disk Device
+		Disk ID: 00000000
+		Type   : SAS
+		Status : Online
+		Path   : 0
+		Target : 1
+		LUN ID : 0
+		Location Path : PCIROOT(0)#PCI(1500)#PCI(0000)#SAS(P00T01L00)
+		Current Read-only State : Yes
+		Read-only  : Yes
+		Boot Disk  : No
+		Pagefile Disk  : No
+		Hibernation File Disk  : No
+		Crashdump Disk  : No
+		Clustered Disk  : No
+
+		There are no volumes.
+
+		DISKPART> attribute disk
+		Current Read-only State : Yes
+		Read-only  : Yes
+		Boot Disk  : No
+		Pagefile Disk  : No
+		Hibernation File Disk  : No
+		Crashdump Disk  : No
+		Clustered Disk  : No
+
+
+		DISKPART> help attribute disk
+
+			Displays, sets, or clears disk attributes for the selected disk.
+
+		Syntax:  ATTRIBUTES DISK [SET | CLEAR] [READONLY] [NOERR]
+
+			SET         Sets the specified attribute for the selected disk.
+
+			CLEAR       Clears the specified attribute for the selected disk.
+
+			READONLY    Specifies that the disk is read-only.
+
+			NOERR       For scripting only. When an error is encountered, DiskPart
+						continues to process commands as if the error did not occur.
+						Without the NOERR parameter, an error causes DiskPart to exit
+						with an error code.
+
+			This command allows the user to set, clear, or display the attributes
+			for a disk. When called with no parameters, this command  displays the
+			current disk flags. READONLY is currently the only disk flag that may
+			be changed. The BOOT DISK attribute denotes the disk used to boot.
+			For a dynamic mirrored volume, the BOOT DISK attribute is
+			displayed for the disk containing the boot plex of the mirrored boot
+			volume.
+
+		Examples:
+
+		To display the attributes on the selected disk, type:
+		ATTRIBUTES DISK
+
+		To set the attribute for the selected disk as read-only, type:
+		ATTRIBUTES DISK SET READONLY
+
+		To clear the read-only attribute for the selected disk, type:
+		ATTRIBUTES DISK CLEAR READONLY
+
+		DISKPART> attribute disk clear readonly
+
+		Disk attributes cleared successfully.
+
+		DISKPART> detail disk
+
+		VMware, VMware Virtual S SCSI Disk Device
+		Disk ID: 00000000
+		Type   : SAS
+		Status : Online
+		Path   : 0
+		Target : 1
+		LUN ID : 0
+		Location Path : PCIROOT(0)#PCI(1500)#PCI(0000)#SAS(P00T01L00)
+		Current Read-only State : No
+		Read-only  : No
+		Boot Disk  : No
+		Pagefile Disk  : No
+		Hibernation File Disk  : No
+		Crashdump Disk  : No
+		Clustered Disk  : No
+
+		There are no volumes.
+
+
+		DISKPART> create partition primary size=500
+
+		DiskPart succeeded in creating the specified partition.
+
+		DISKPART> create partition primary
+
+		DiskPart succeeded in creating the specified partition.
+
+
+		DISKPART> detail disk
+
+		VMware, VMware Virtual S SCSI Disk Device
+		Disk ID: C21659AB
+		Type   : SAS
+		Status : Online
+		Path   : 0
+		Target : 1
+		LUN ID : 0
+		Location Path : PCIROOT(0)#PCI(1500)#PCI(0000)#SAS(P00T01L00)
+		Current Read-only State : No
+		Read-only  : No
+		Boot Disk  : No
+		Pagefile Disk  : No
+		Hibernation File Disk  : No
+		Crashdump Disk  : No
+		Clustered Disk  : No
+
+		  Volume ###  Ltr  Label        Fs     Type        Size     Status     Info
+		  ----------  ---  -----------  -----  ----------  -------  ---------  --------
+		* Volume 3                      RAW    Partition    522 MB  Healthy
+		  Volume 4                      RAW    Partition    500 MB  Healthy
+
+
+		DISKPART> select volume 3
+
+		Volume 3 is the selected volume.
+
+
+		DISKPART> detail volume
+
+		  Disk ###  Status         Size     Free     Dyn  Gpt
+		  --------  -------------  -------  -------  ---  ---
+		* Disk 1    Online         1024 MB      0 B
+
+		Read-only              : No
+		Hidden                 : No
+		No Default Drive Letter: No
+		Shadow Copy            : No
+		Offline                : No
+		BitLocker Encrypted    : No
+		Installable            : Yes
+
+		Volume Capacity        :  522 MB
+		Volume Free Space      :  522 MB
+
+
+
+		DISKPART> format fs=fat32 label="fat32" quick
+
+		  100 percent completed
+
+		DiskPart successfully formatted the volume.
+
+
+		DISKPART> detail disk
+
+		VMware, VMware Virtual S SCSI Disk Device
+		Disk ID: C21659AB
+		Type   : SAS
+		Status : Online
+		Path   : 0
+		Target : 1
+		LUN ID : 0
+		Location Path : PCIROOT(0)#PCI(1500)#PCI(0000)#SAS(P00T01L00)
+		Current Read-only State : No
+		Read-only  : No
+		Boot Disk  : No
+		Pagefile Disk  : No
+		Hibernation File Disk  : No
+		Crashdump Disk  : No
+		Clustered Disk  : No
+
+		  Volume ###  Ltr  Label        Fs     Type        Size     Status     Info
+		  ----------  ---  -----------  -----  ----------  -------  ---------  --------
+		* Volume 3         FAT32        FAT32  Partition    522 MB  Healthy
+		  Volume 4                      RAW    Partition    500 MB  Healthy
+
+		DISKPART> select volume 4
+
+		Volume 4 is the selected volume.
+
+		DISKPART> format fs=ntfs label="ntfs" quick
+
+		  100 percent completed
+
+		DiskPart successfully formatted the volume.
+
+		DISKPART> detail disk
+
+		VMware, VMware Virtual S SCSI Disk Device
+		Disk ID: C21659AB
+		Type   : SAS
+		Status : Online
+		Path   : 0
+		Target : 1
+		LUN ID : 0
+		Location Path : PCIROOT(0)#PCI(1500)#PCI(0000)#SAS(P00T01L00)
+		Current Read-only State : No
+		Read-only  : No
+		Boot Disk  : No
+		Pagefile Disk  : No
+		Hibernation File Disk  : No
+		Crashdump Disk  : No
+		Clustered Disk  : No
+
+		  Volume ###  Ltr  Label        Fs     Type        Size     Status     Info
+		  ----------  ---  -----------  -----  ----------  -------  ---------  --------
+		  Volume 3         FAT32        FAT32  Partition    522 MB  Healthy
+		* Volume 4         ntfs         NTFS   Partition    500 MB  Healthy
+
+
+		DISKPART> uniqueid disk
+
+		Disk ID: C21659AB
+
+
+		DISKPART> select volume 3
+
+		Volume 3 is the selected volume.
+
+		DISKPART> assign letter=x
+
+		DiskPart successfully assigned the drive letter or mount point.
+
+		DISKPART> detail disk
+
+		VMware, VMware Virtual S SCSI Disk Device
+		Disk ID: C21659AB
+		Type   : SAS
+		Status : Online
+		Path   : 0
+		Target : 1
+		LUN ID : 0
+		Location Path : PCIROOT(0)#PCI(1500)#PCI(0000)#SAS(P00T01L00)
+		Current Read-only State : No
+		Read-only  : No
+		Boot Disk  : No
+		Pagefile Disk  : No
+		Hibernation File Disk  : No
+		Crashdump Disk  : No
+		Clustered Disk  : No
+
+		  Volume ###  Ltr  Label        Fs     Type        Size     Status     Info
+		  ----------  ---  -----------  -----  ----------  -------  ---------  --------
+		* Volume 3     X   FAT32        FAT32  Partition    522 MB  Healthy
+		  Volume 4         ntfs         NTFS   Partition    500 MB  Healthy
+
+		DISKPART> select volume 4
+
+		Volume 4 is the selected volume.
+
+		DISKPART> assign letter=y
+
+		DiskPart successfully assigned the drive letter or mount point.
+
+		DISKPART> detail disk
+
+		VMware, VMware Virtual S SCSI Disk Device
+		Disk ID: C21659AB
+		Type   : SAS
+		Status : Online
+		Path   : 0
+		Target : 1
+		LUN ID : 0
+		Location Path : PCIROOT(0)#PCI(1500)#PCI(0000)#SAS(P00T01L00)
+		Current Read-only State : No
+		Read-only  : No
+		Boot Disk  : No
+		Pagefile Disk  : No
+		Hibernation File Disk  : No
+		Crashdump Disk  : No
+		Clustered Disk  : No
+
+		  Volume ###  Ltr  Label        Fs     Type        Size     Status     Info
+		  ----------  ---  -----------  -----  ----------  -------  ---------  --------
+		  Volume 3     X   FAT32        FAT32  Partition    522 MB  Healthy
+		* Volume 4     Y   ntfs         NTFS   Partition    500 MB  Healthy
+
+		DISKPART> exit
+
+		Leaving DiskPart...
+
+
+
+# 2. Directory and file management
+
+	Administrator@XPC C:\Users\Administrator
+	# cd /d x:
+
+
+	Administrator@XPC X:\
+	# mkdir pnw\hammond\power\202
+
+	Administrator@XPC X:\
+	# mkdir pnw\westville
+
+	Administrator@XPC X:\
+	# cd pnw\westville
+
+	Administrator@XPC X:\pnw\westville
+	# mkdir dsac lsf swrz tech mgsf pfcp
+
+	Administrator@XPC X:\pnw\westville
+	# cd tech
+
+	Administrator@XPC X:\pnw\westville\tech
+	# for /L %n in (1 1 10) do mkdir "Tech0%n" "Tech1%n" "Tech2%n"
+
+
+	Administrator@XPC X:\pnw\westville\tech
+	# tree X:\
+	Folder PATH listing for volume FAT32
+	Volume serial number is FCF0-6759
+	X:\
+	└───pnw
+		├───hammond
+		│   └───power
+		│       └───202
+		└───westville
+			├───dsac
+			├───lsf
+			├───swrz
+			├───tech
+			│   ├───Tech01
+			│   ├───Tech11
+			│   ├───Tech21
+			│   ├───Tech02
+			│   ├───Tech12
+			│   ├───Tech22
+			│   ├───Tech03
+			│   ├───Tech13
+			│   ├───Tech23
+			│   ├───Tech04
+			│   ├───Tech14
+			│   ├───Tech24
+			│   ├───Tech05
+			│   ├───Tech15
+			│   ├───Tech25
+			│   ├───Tech06
+			│   ├───Tech16
+			│   ├───Tech26
+			│   ├───Tech07
+			│   ├───Tech17
+			│   ├───Tech27
+			│   ├───Tech08
+			│   ├───Tech18
+			│   ├───Tech28
+			│   ├───Tech09
+			│   ├───Tech19
+			│   ├───Tech29
+			│   ├───Tech010
+			│   ├───Tech110
+			│   └───Tech210
+			├───mgsf
+			└───pfcp
+
+	Administrator@XPC X:\pnw\westville\tech
+	# cd Tech010
+
+	Administrator@XPC X:\pnw\westville\tech\Tech010
+	# for /L %a in (1 1 12) do type nul > "Lab%a.txt"
+
+
+	Administrator@XPC X:\pnw\westville\tech\Tech010
+	# dir
+	 Volume in drive X is FAT32
+	 Volume Serial Number is FCF0-6759
+
+	 Directory of X:\pnw\westville\tech\Tech010
+
+	01/15/2019  07:07 PM    <DIR>          .
+	01/15/2019  07:07 PM    <DIR>          ..
+	01/15/2019  07:10 PM                 0 Lab1.txt
+	01/15/2019  07:10 PM                 0 Lab2.txt
+	01/15/2019  07:10 PM                 0 Lab3.txt
+	01/15/2019  07:10 PM                 0 Lab4.txt
+	01/15/2019  07:10 PM                 0 Lab5.txt
+	01/15/2019  07:10 PM                 0 Lab6.txt
+	01/15/2019  07:10 PM                 0 Lab7.txt
+	01/15/2019  07:10 PM                 0 Lab8.txt
+	01/15/2019  07:10 PM                 0 Lab9.txt
+	01/15/2019  07:10 PM                 0 Lab10.txt
+	01/15/2019  07:10 PM                 0 Lab11.txt
+	01/15/2019  07:10 PM                 0 Lab12.txt
+				  12 File(s)              0 bytes
+				   2 Dir(s)     543,973,376 bytes free
+
+
+
+	Administrator@XPC X:\pnw\westville\tech\Tech010
+	# cd \
+
+
+	Administrator@XPC X:\
+	# echo lab1 > dontcopy
+
+	Administrator@XPC X:\
+	# xcopy /e x:\ y:\ /exclude:dontcopy
+	X:\dontcopy
+	X:\pnw\westville\tech\Tech010\Lab2.txt
+	X:\pnw\westville\tech\Tech010\Lab3.txt
+	X:\pnw\westville\tech\Tech010\Lab4.txt
+	X:\pnw\westville\tech\Tech010\Lab5.txt
+	X:\pnw\westville\tech\Tech010\Lab6.txt
+	X:\pnw\westville\tech\Tech010\Lab7.txt
+	X:\pnw\westville\tech\Tech010\Lab8.txt
+	X:\pnw\westville\tech\Tech010\Lab9.txt
+	9 File(s) copied
+
+	Administrator@XPC X:\
+	# tree y:\
+	Folder PATH listing for volume ntfs
+	Volume serial number is 2819-2A49
+	Y:\
+	└───pnw
+		├───hammond
+		│   └───power
+		│       └───202
+		└───westville
+			├───dsac
+			├───lsf
+			├───mgsf
+			├───pfcp
+			├───swrz
+			└───tech
+				├───Tech01
+				├───Tech010
+				├───Tech02
+				├───Tech03
+				├───Tech04
+				├───Tech05
+				├───Tech06
+				├───Tech07
+				├───Tech08
+				├───Tech09
+				├───Tech11
+				├───Tech110
+				├───Tech12
+				├───Tech13
+				├───Tech14
+				├───Tech15
+				├───Tech16
+				├───Tech17
+				├───Tech18
+				├───Tech19
+				├───Tech21
+				├───Tech210
+				├───Tech22
+				├───Tech23
+				├───Tech24
+				├───Tech25
+				├───Tech26
+				├───Tech27
+				├───Tech28
+				└───Tech29
+
+	Administrator@XPC X:\
+	# dir /s y:\*.txt
+	 Volume in drive Y is ntfs
+	 Volume Serial Number is 2819-2A49
+
+	 Directory of y:\pnw\westville\tech\Tech010
+
+	01/15/2019  07:10 PM                 0 Lab2.txt
+	01/15/2019  07:10 PM                 0 Lab3.txt
+	01/15/2019  07:10 PM                 0 Lab4.txt
+	01/15/2019  07:10 PM                 0 Lab5.txt
+	01/15/2019  07:10 PM                 0 Lab6.txt
+	01/15/2019  07:10 PM                 0 Lab7.txt
+	01/15/2019  07:10 PM                 0 Lab8.txt
+	01/15/2019  07:10 PM                 0 Lab9.txt
+				   8 File(s)              0 bytes
+
+		 Total Files Listed:
+				   8 File(s)              0 bytes
+				   0 Dir(s)     490,209,280 bytes free
+
+	Administrator@XPC X:\
+	#
+	

@@ -1,0 +1,21 @@
+== Windows commands Introduction ==
+
+# 1. Basic practice
+	## 1. Configure cmd or ConEmu
+	
+	## 2. Basic operation
+	* start and exit
+	* move around
+	* clear screen
+	* get help
+	* shutdown system
+	
+# 2. Data management
+	# 1. File and directory management
+	# 2. Hard drive management
+
+# 3. Task management	
+	* management of applications and services
+	* task schedule
+	
+# 4. Network management
