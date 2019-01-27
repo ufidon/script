@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # In this lab, you are required to write a small batch program showing file information.
+=======
+# In this lab, you are required to write a small batch program show file information.
+>>>>>>> 3771e01b2053c1fb2fd53992f46887d747298c69
 # The program should be well-commented.
 # It has the following functionalities:
 
