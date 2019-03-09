@@ -15,6 +15,7 @@ Course materials and demos
 * [The Linux Command Line](http://linuxcommand.org/tlcl.php)
 * [GNU Bash manual](https://www.gnu.org/software/bash/manual/)
 * [Advanced Bash-Scripting Guide](https://www.tldp.org/LDP/abs/html/)
+* [Embedded Linux and Kernel Engineering](https://bootlin.com/)
 
 ## Perl Programming references
 * [Perl Tutorial](http://www.perltutorial.org/)
