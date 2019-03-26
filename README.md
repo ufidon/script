@@ -13,6 +13,7 @@ Course materials and demos
 
 ## Linux Bash Programming references
 * [The Linux Command Line](http://linuxcommand.org/tlcl.php)
+* [Bash Shell Scripting](https://en.wikibooks.org/wiki/Bash_Shell_Scripting)
 * [GNU Bash manual](https://www.gnu.org/software/bash/manual/)
 * [Advanced Bash-Scripting Guide](https://www.tldp.org/LDP/abs/html/)
 * [Embedded Linux and Kernel Engineering](https://bootlin.com/)
