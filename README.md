@@ -20,5 +20,6 @@ Course materials and demos
 
 ## Perl Programming references
 * [Perl Tutorial](http://www.perltutorial.org/)
+* [Beginning Perl](https://learn.perl.org/books/beginning-perl/)
 * [Learn Perl](https://learn.perl.org/tutorials/)
 * [Perl Monks](https://perlmonks.org/index.pl?node=Tutorials)
