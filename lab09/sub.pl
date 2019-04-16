@@ -35,17 +35,17 @@ my(@ip,@iip);
 @ip=("192.168.111.222","192.168.0.0","172.20.0.0","172.31.0.172", "10.0.0.0", "10.0.0.255","10.255.255.255","0.0.0.0", "255.255.255.255");
 
 for(@ip){
-    push(@iip, ip2Int($_));
+    push(@iip, ip2Int($_)?ip2Int($_):0);
 }
 
 
 my @rip = ();
 for(@iip){
-    push(@rip, int2Ip($_));
+    push(@rip, int2Ip($_)?int2Ip($_):0);
 }
 
 for my $i (0..$#ip){
-    print $ip[$i] . "->" . $iip[$i] . "->" . $rip[$i] ."\n";
+    print $ip[$i] . "->" . "$iip[$i]" . "->" . $rip[$i] ."\n";
 }
 
 # output should be:
