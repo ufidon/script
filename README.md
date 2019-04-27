@@ -16,7 +16,9 @@ Course materials and demos
 * [Bash Shell Scripting](https://en.wikibooks.org/wiki/Bash_Shell_Scripting)
 * [GNU Bash manual](https://www.gnu.org/software/bash/manual/)
 * [Advanced Bash-Scripting Guide](https://www.tldp.org/LDP/abs/html/)
+* [Bash Hacker's Wiki](https://wiki-dev.bash-hackers.org)
 * [Embedded Linux and Kernel Engineering](https://bootlin.com/)
+
 
 ## Perl Programming references
 * [Perl Tutorial](http://www.perltutorial.org/)
