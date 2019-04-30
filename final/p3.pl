@@ -43,5 +43,5 @@ $href = \%books;
 $ac = @$aref;
 $hc = %{$href->{'its372'}[2]};
 
-print "\$ac=$ac, \$hc=$hc\n";
+
 
