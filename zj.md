@@ -39,6 +39,8 @@
 * [Best Perl Books For Programmers: The Ultimate Collection](https://whatpixel.com/best-perl-books/)
 * [The Effective Perler](https://www.effectiveperlprogramming.com/)
 
+* [Data Munging With Perl](https://perlhacks.com/2014/04/data-munging-perl/)
+
 # 系统文档
 ## Linux
 * [Ubuntu Server Guide](https://help.ubuntu.com/lts/serverguide/index.html)
