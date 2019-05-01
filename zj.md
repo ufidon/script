@@ -41,7 +41,7 @@
 
 # 系统文档
 ## Linux
-* [Ubuntu Server Guide](https://help.ubuntu.com/lts/serverguide/index.html）
+* [Ubuntu Server Guide](https://help.ubuntu.com/lts/serverguide/index.html)
 * [TLDP guides](https://www.tldp.org/guides.html)
 ## Windows
 * [Windows Commands](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)
