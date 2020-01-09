@@ -2,7 +2,9 @@
 online materials for its372
 
 ## Module00: Overview of System Administration
-
+**Concepts**
+* [System administrator](https://en.wikipedia.org/wiki/System\_administrator)
+* [Systems management](https://en.wikipedia.org/wiki/Systems\_management)
 
 ## Module01: Windows batch programming
 * [Windows Batch Scripting](https://en.wikibooks.org/wiki/Windows_Batch_Scripting)
