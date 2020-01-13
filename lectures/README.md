@@ -11,6 +11,7 @@ online materials for its372
 * [Programming CMD](https://en.wikibooks.org/wiki/Windows_Programming/Programming_CMD)
 * [Microsoft DOS and Windows command line](https://www.computerhope.com/msdos.htm)
 * [Guide to Windows Batch Scripting](http://steve-jansen.github.io/guides/windows-batch-scripting/)
+* [Windows commands reference](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)
 
 ## Module02: Powershell programming
 * [Microsoft PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/?view=powershell-6)
