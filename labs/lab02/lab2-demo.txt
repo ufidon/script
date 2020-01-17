@@ -1,7 +1,7 @@
 == storage management ==
 
 # 1. Disk management
-	# 1. Add a 1GB disk to the Windows Server 2012 VM
+	# 1. Add a 1GB disk to the Windows Server VM
 	
 	# 2. Use command DISKPART complete the following tasks
 		
