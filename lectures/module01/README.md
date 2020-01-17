@@ -89,6 +89,7 @@ online materials for its372
     * compact - Shows or changes the compression of files or folders on NTFS partitions
 
 * act on users
+  * net user
   * calcs, icalcs - Shows or changes discretionary access control lists (DACLs)
   * gpresult - Displays group policy settings and more for a user or a computer 
 
@@ -128,6 +129,11 @@ online materials for its372
 ### Batch scripting
 
 * [Windows batch scripting](https://en.wikibooks.org/wiki/Windows\_Batch\_Scripting)
+* [Create and Manage User Accounts and Privileges in Windows 10](https://www.groovypost.com/howto/create-manage-user-account-privileges-windows-10/)
+
+
+## Tips
+* [Managing user accounts from windows command line](https://www.windows-commandline.com/category/user-accounts/)
 
 # System documentation
 ## Windows
