@@ -129,14 +129,20 @@ online materials for its372
 ### Batch scripting
 
 * [Windows batch scripting](https://en.wikibooks.org/wiki/Windows\_Batch\_Scripting)
-* [Create and Manage User Accounts and Privileges in Windows 10](https://www.groovypost.com/howto/create-manage-user-account-privileges-windows-10/)
 
+
+### Windows scripting
+
+* [Windows Script Host overview](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc738350\(v=ws\.10\)?redirectedfrom=MSDN)
+* [wscript](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/wscript)
+* [cscript](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/cscript)
 
 ## Tips
 * [Managing user accounts from windows command line](https://www.windows-commandline.com/category/user-accounts/)
+* [Create and Manage User Accounts and Privileges in Windows 10](https://www.groovypost.com/howto/create-manage-user-account-privileges-windows-10/)
 
-# System documentation
-## Windows
+## Windows system documentation
+
 * [Windows Commands](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)
 * [Command-Line Reference](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc754340%28v%3dws.11%29)
 * [Windows batch scripting](https://en.wikibooks.org/wiki/Windows\_Batch\_Scripting)

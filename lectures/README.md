@@ -7,11 +7,19 @@ online materials for its372
 * [Systems management](https://en.wikipedia.org/wiki/Systems\_management)
 
 ## Module01: Windows batch programming
-* [Windows Batch Scripting](https://en.wikibooks.org/wiki/Windows_Batch_Scripting)
-* [Programming CMD](https://en.wikibooks.org/wiki/Windows_Programming/Programming_CMD)
-* [Microsoft DOS and Windows command line](https://www.computerhope.com/msdos.htm)
-* [Guide to Windows Batch Scripting](http://steve-jansen.github.io/guides/windows-batch-scripting/)
-* [Windows commands reference](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)
+* _Batch programming_
+  * [Windows Batch Scripting](https://en.wikibooks.org/wiki/Windows_Batch_Scripting)
+  * [Programming CMD](https://en.wikibooks.org/wiki/Windows_Programming/Programming_CMD)
+  * [Microsoft DOS and Windows command line](https://www.computerhope.com/msdos.htm)
+  * [Guide to Windows Batch Scripting](http://steve-jansen.github.io/guides/windows-batch-scripting/)
+  * [Windows commands reference](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)
+
+* _Windows scripting_
+  * [Windows Script Host](https://en.wikipedia.org/wiki/Windows\_Script\_Host)
+  * [Windows Script File](https://en.wikipedia.org/wiki/Windows\_Script\_File)
+  * [Active Scripting](https://en.wikipedia.org/wiki/Active\_Scripting)
+  * [Windows Script Host Concepts](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc778530\(v=ws\.10\))
+  * [Microsoft WSH and VBScript Programming for the Absolute Beginner](https://flylib.com/books/en/2.442.1/)
 
 ## Module02: Powershell programming
 * [Microsoft PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/?view=powershell-6)
