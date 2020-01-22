@@ -134,8 +134,14 @@ online materials for its372
 ### Windows scripting
 
 * [Windows Script Host overview](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc738350\(v=ws\.10\)?redirectedfrom=MSDN)
+* [Windows Script Host](https://docs.microsoft.com/en-us/previous-versions//9bbdkx3k\(v=vs\.85\)?redirectedfrom=MSDN)
+* [Reference (Windows Script Host)](https://docs.microsoft.com/en-us/previous-versions//98591fh7\(v=vs.85\)?redirectedfrom=MSDN)
+* [Active Scripting](https://en.wikipedia.org/wiki/Active\_Scripting)
 * [wscript](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/wscript)
 * [cscript](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/cscript)
+* [VBScript](https://docs.microsoft.com/en-us/previous-versions/t0aew7h6\(v=vs\.85\))
+* [JScript](https://docs.microsoft.com/en-us/previous-versions//hbxc2t98\(v=vs.85\)?redirectedfrom=MSDN)
+* [Visual Studio Tools for Applications](https://en.wikipedia.org/wiki/Visual\_Studio\_Tools\_for\_Applications)
 
 ## Tips
 * [Managing user accounts from windows command line](https://www.windows-commandline.com/category/user-accounts/)
