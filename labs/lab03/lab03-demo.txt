@@ -1,0 +1,204 @@
+# In this lab, you are required to write a small batch program showing file information.
+# The program should be well-commented.
+# It has the following functionalities:
+
+## 1. program name and usage
+## * program name is fileinfo
+## * Usage: 
+## * fileinfo filename
+## * fileinfo /? show this help
+
+
+## 2. exception handling
+## 2.1 if no parameter is provided, show the usage and exit
+## 2.2 if /? is provided, show the usage and exit
+## 2.3 if more than one parameter provided, show the usage and exit
+## 2.4 if one parameter is provided, but the file not exist show the problem and exit
+
+## 3. the file exists, show the choice table and input hint
+----------------------------------------
+Please select what information you want:
+1. Full pathname press f
+2. Drive latter press d
+3. Drive-less path press p
+4. File name only press n
+5. File name extension press x
+6. File attributes press a
+7. File modification date and time press t
+8. File size press z
+9. Quit press q
+----------------------------------------
+Please press the corresponding key to select the information: [F,D,P,N,X,A,T,Z,Q]?
+****************************************
+
+## 4. demonstrate each key press works
+
+e:\S2019\share\i372\w04>fileinfo fileinfo.bat
+ ----------------------------------------
+ Please select what information you want:
+ 1. Full pathname press f
+ 2. Drive latter press d
+ 3. Drive-less path press p
+ 4. File name only press n
+ 5. File name extension press x
+ 6. File attributes press a
+ 7. File modification date and time press t
+ 8. File size press z
+ 9. Quit press q
+ ----------------------------------------
+Please press the corresponding key to select the information: [F,D,P,N,X,A,T,Z,Q]?F
+ ****************************************
+
+     Full pathname:
+     e:\S2019\share\i372\w04\fileinfo.bat
+
+ ****************************************
+ ----------------------------------------
+ Please select what information you want:
+ 1. Full pathname press f
+ 2. Drive latter press d
+ 3. Drive-less path press p
+ 4. File name only press n
+ 5. File name extension press x
+ 6. File attributes press a
+ 7. File modification date and time press t
+ 8. File size press z
+ 9. Quit press q
+ ----------------------------------------
+Please press the corresponding key to select the information: [F,D,P,N,X,A,T,Z,Q]?D
+ ****************************************
+
+     Drive letter:
+     e:
+
+ ****************************************
+ ----------------------------------------
+ Please select what information you want:
+ 1. Full pathname press f
+ 2. Drive latter press d
+ 3. Drive-less path press p
+ 4. File name only press n
+ 5. File name extension press x
+ 6. File attributes press a
+ 7. File modification date and time press t
+ 8. File size press z
+ 9. Quit press q
+ ----------------------------------------
+Please press the corresponding key to select the information: [F,D,P,N,X,A,T,Z,Q]?P
+ ****************************************
+
+     Drive-less path:
+     \S2019\share\i372\w04\
+
+ ****************************************
+ ----------------------------------------
+ Please select what information you want:
+ 1. Full pathname press f
+ 2. Drive latter press d
+ 3. Drive-less path press p
+ 4. File name only press n
+ 5. File name extension press x
+ 6. File attributes press a
+ 7. File modification date and time press t
+ 8. File size press z
+ 9. Quit press q
+ ----------------------------------------
+Please press the corresponding key to select the information: [F,D,P,N,X,A,T,Z,Q]?N
+ ****************************************
+
+     File name only:
+     fileinfo
+
+ ****************************************
+ ----------------------------------------
+ Please select what information you want:
+ 1. Full pathname press f
+ 2. Drive latter press d
+ 3. Drive-less path press p
+ 4. File name only press n
+ 5. File name extension press x
+ 6. File attributes press a
+ 7. File modification date and time press t
+ 8. File size press z
+ 9. Quit press q
+ ----------------------------------------
+Please press the corresponding key to select the information: [F,D,P,N,X,A,T,Z,Q]?X
+ ****************************************
+
+     File name extension:
+     .bat
+
+ ****************************************
+ ----------------------------------------
+ Please select what information you want:
+ 1. Full pathname press f
+ 2. Drive latter press d
+ 3. Drive-less path press p
+ 4. File name only press n
+ 5. File name extension press x
+ 6. File attributes press a
+ 7. File modification date and time press t
+ 8. File size press z
+ 9. Quit press q
+ ----------------------------------------
+Please press the corresponding key to select the information: [F,D,P,N,X,A,T,Z,Q]?A
+ ****************************************
+
+     File attributes:
+     --a--------
+
+ ****************************************
+ ----------------------------------------
+ Please select what information you want:
+ 1. Full pathname press f
+ 2. Drive latter press d
+ 3. Drive-less path press p
+ 4. File name only press n
+ 5. File name extension press x
+ 6. File attributes press a
+ 7. File modification date and time press t
+ 8. File size press z
+ 9. Quit press q
+ ----------------------------------------
+Please press the corresponding key to select the information: [F,D,P,N,X,A,T,Z,Q]?T
+ ****************************************
+
+     File modification date and time:
+     01/26/2019 22:48
+
+ ****************************************
+ ----------------------------------------
+ Please select what information you want:
+ 1. Full pathname press f
+ 2. Drive latter press d
+ 3. Drive-less path press p
+ 4. File name only press n
+ 5. File name extension press x
+ 6. File attributes press a
+ 7. File modification date and time press t
+ 8. File size press z
+ 9. Quit press q
+ ----------------------------------------
+Please press the corresponding key to select the information: [F,D,P,N,X,A,T,Z,Q]?Z
+ ****************************************
+
+     File size:
+     2098
+
+ ****************************************
+ ----------------------------------------
+ Please select what information you want:
+ 1. Full pathname press f
+ 2. Drive latter press d
+ 3. Drive-less path press p
+ 4. File name only press n
+ 5. File name extension press x
+ 6. File attributes press a
+ 7. File modification date and time press t
+ 8. File size press z
+ 9. Quit press q
+ ----------------------------------------
+Please press the corresponding key to select the information: [F,D,P,N,X,A,T,Z,Q]?Q
+ ****************************************
+
+e:\S2019\share\i372\w04>

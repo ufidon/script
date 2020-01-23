@@ -127,9 +127,12 @@ online materials for its372
 
 
 ### Batch scripting
+* _Tutorials_
+  * [Windows batch scripting](https://en.wikibooks.org/wiki/Windows\_Batch\_Scripting)
 
-* [Windows batch scripting](https://en.wikibooks.org/wiki/Windows\_Batch\_Scripting)
-
+* _Questions_
+  * [What is the difference between ++i and i++?](https://stackoverflow.com/questions/24853/c-what-is-the-difference-between-i-and-i)
+  * [ Does cmd.exe execute the old version or updated version when the source code is modified during execution?](https://en.wikibooks.org/wiki/Windows\_Batch\_Scripting\#Batch\_reloading)
 
 ### Windows scripting
 
