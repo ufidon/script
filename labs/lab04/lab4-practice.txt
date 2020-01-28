@@ -1,2 +1,16 @@
 == Windows Batch Programming II ==
 https://en.wikibooks.org/wiki/Windows_Batch_Scripting
+
+== OpenStego command line ==
+https://www.openstego.com/cmdline.html
+
+== Java command line ==
+
+== OpenSSL command line ==
+https://wiki.openssl.org/index.php/Command_Line_Utilities
+
+== FFmpeg command line ==
+https://ffmpeg.org/ffmpeg.html
+
+== GnuPG comm line ==
+https://gnupg.org/documentation/manuals/gnupg/
