@@ -13,6 +13,9 @@ online materials for its372
   * [Microsoft DOS and Windows command line](https://www.computerhope.com/msdos.htm)
   * [Guide to Windows Batch Scripting](http://steve-jansen.github.io/guides/windows-batch-scripting/)
   * [Windows commands reference](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)
+  * [DosTips - The DOS Batch Guide](https://www.dostips.com/)
+  * [The Windows Batch Library - Generic DOS batch script library](https://github.com/ClicketyClickDK/Underscore)
+  * [Windows .bat/.cmd function library in own file?](https://stackoverflow.com/questions/7712661/windows-bat-cmd-function-library-in-own-file)
 
 * _Windows scripting_
   * [Windows Script Host](https://en.wikipedia.org/wiki/Windows\_Script\_Host)
