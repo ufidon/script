@@ -6,7 +6,19 @@ online materials for its372
 ## Module02: Powershell programming
 * _Overview_
   * [PowerShell](https://en.wikipedia.org/wiki/PowerShell)
+* _COM_
+  * [PSTip Get a list of all Com objects available](https://www.powershellmagazine.com/2013/06/27/pstip-get-a-list-of-all-com-objects-available/)
+  * [Creating .NET and COM Objects](https://docs.microsoft.com/en-us/powershell/scripting/samples/creating-.net-and-com-objects--new-object-?view=powershell-7)
+  * [Viewing Object Structure](https://docs.microsoft.com/en-us/powershell/scripting/samples/viewing-object-structure--get-member-?view=powershell-7)
+* _.Net Classes_
+  * [Useful .NET classes for PowerShell](https://4sysops.com/wiki/useful-net-classes-for-powershell/)
+  * [.NET Framework](https://en.wikipedia.org/wiki/\.NET\_Framework)
 
+* _GUI_
+  * [Creating a Custom Input Box](https://docs.microsoft.com/en-us/powershell/scripting/samples/creating-a-custom-input-box?view=powershell-7)
+  * [PowerShell GUI – Howto get started](https://lazyadmin.nl/powershell/powershell-gui-howto-get-started/)
+  * [Building Forms with PowerShell – Part 1](https://blogs.technet.microsoft.com/stephap/2012/04/23/building-forms-with-powershell-part-1-the-form/)
+  * [Building Forms with PowerShell – Part 2](https://www.windows10forums.com/articles/windows-powershell-tutorial-8-forms-part-2.74/)
 ## Windows Powershell documentation
 * [Microsoft PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/)
 * [PowerShell on Github](https://github.com/PowerShell/PowerShell)
@@ -16,7 +28,5 @@ online materials for its372
 * [PowerShell Module Browser](https://docs.microsoft.com/en-us/powershell/module/)
 
 
-# Tools
-* [ConEmu](https://conemu.github.io/)
 
 
