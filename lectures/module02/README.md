@@ -21,6 +21,9 @@ online materials for its372
   * [Building Forms with PowerShell – Part 2](https://www.windows10forums.com/articles/windows-powershell-tutorial-8-forms-part-2.74/)
   * [How to build a form in PowerShell ?](https://gallery.technet.microsoft.com/scriptcenter/How-to-build-a-form-in-7e343ba3)
   * [Windows Forms](https://docs.microsoft.com/en-us/dotnet/framework/winforms/)
+  * [Windows Presentation Foundation](https://docs.microsoft.com/en-us/dotnet/framework/wpf/)
+  * [.NET Framework Guide](https://docs.microsoft.com/en-us/dotnet/framework/)
+  * [.NET documentation](https://docs.microsoft.com/en-us/dotnet/)
 ## Windows Powershell documentation
 * [Microsoft PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/)
 * [PowerShell on Github](https://github.com/PowerShell/PowerShell)
