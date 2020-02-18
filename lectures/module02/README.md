@@ -19,6 +19,8 @@ online materials for its372
   * [PowerShell GUI – Howto get started](https://lazyadmin.nl/powershell/powershell-gui-howto-get-started/)
   * [Building Forms with PowerShell – Part 1](https://blogs.technet.microsoft.com/stephap/2012/04/23/building-forms-with-powershell-part-1-the-form/)
   * [Building Forms with PowerShell – Part 2](https://www.windows10forums.com/articles/windows-powershell-tutorial-8-forms-part-2.74/)
+  * [How to build a form in PowerShell ?](https://gallery.technet.microsoft.com/scriptcenter/How-to-build-a-form-in-7e343ba3)
+  * [Windows Forms](https://docs.microsoft.com/en-us/dotnet/framework/winforms/)
 ## Windows Powershell documentation
 * [Microsoft PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/)
 * [PowerShell on Github](https://github.com/PowerShell/PowerShell)
