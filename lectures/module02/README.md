@@ -33,6 +33,10 @@ online materials for its372
   * [Windows Presentation Foundation](https://docs.microsoft.com/en-us/dotnet/framework/wpf/)
   * [.NET Framework Guide](https://docs.microsoft.com/en-us/dotnet/framework/)
   * [.NET documentation](https://docs.microsoft.com/en-us/dotnet/)
+
+* _Database_
+  * [Powershell: Some examples to use a MySQL Database](https://michlstechblog.info/blog/powershell-some-examples-to-use-a-mysql-database/)
+  * [PowerShell: Accessing SQLite databases](https://social.technet.microsoft.com/wiki/contents/articles/30562.powershell-accessing-sqlite-databases.aspx)
 ## Windows Powershell documentation
 * [Microsoft PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/)
 * [PowerShell on Github](https://github.com/PowerShell/PowerShell)
