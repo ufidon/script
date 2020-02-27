@@ -100,13 +100,13 @@ while($true)
             break
         }
         "d" {
-            $uname = Read-Host "Enter the User's name you want to activate"
+            $uname = Read-Host "Enter the User's name you want to deactivate"
             if((net user $uname  2>$null) -eq $null){
                 Out-Host -InputObject "user $uname not exists"
                 break
             }
 			
-            # TODO: enable user with name $uname
+            # TODO: disable user with name $uname
             
             break
         }
