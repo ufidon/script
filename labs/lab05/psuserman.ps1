@@ -54,7 +54,7 @@ while($true)
                 Out-Host -InputObject "user $uname exists"
                 break
             }
-            $passwd = Read-host "Set the User's password"
+            $passwd = Read-host "Set the User's password" -AsSecureString
 			
 			# TODO: create a local user with name $uname and password $passwd
             
@@ -125,7 +125,8 @@ while($true)
             $homepath = Read-Host "User's home directory"
             if(Test-Path $homepath){
 				# TODO: modify the home directory of the user with name $uname 				
-                
+                # this is NOT implemented in Powershell yet
+                net user $uname /homedir:$homepath
             }
             else
             {
