@@ -3,10 +3,17 @@ online materials for its372
 
 
 ## Module03: Linux shell programming
-### Linux command line
+
+### Linux introduction & command line
+
+* _Youtube video_
+  * [Linux/Unix Tutorial For Beginners](https://www.youtube.com/playlist?list=PLckPQEKYlbxebubMWdjcGR7K_ukm35ZjN)
 
 
 ### Linux shell programming
+
+* _Youtube video_
+  * [Unix Shell Scripting Tutorial](https://www.youtube.com/playlist?list=PL18DF64CBBAEAAE77)
 
 ### References
 * [The Linux Command Line](http://linuxcommand.org/tlcl.php)
