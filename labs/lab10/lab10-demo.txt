@@ -1,0 +1,51 @@
+In this lab, implement a program that can:
+
+# Get the statistics of groups and users on a computer
+# 1. Find the largest groups and their users
+# 2. Find the most sociable users and the groups they are in
+# 3. Save the statistics above in report file
+
+# Demonstration:
+
+xp@Ubun:~/its372/perl$ perl systats.pl 
+
+Statistics about the Groups and Users on Computer Ubun
+
+============================================================
+Groups statistics:
+------------------
+The largest groups has 2 users.
+These groups are:
+
+Group adm has users: syslog,xp.
+
+------------------------------------------------------------
+Users statistics:
+------------------
+The most sociable users are in 10 groups.
+These users are:
+
+User xp is in groups: xp adm cdrom sudo dip plugdev lpadmin sambashare wireshark docker
+
+
+Type the file name to save the statistics:records.txt
+xp@Ubun:~/its372/perl$ cat records.txt 
+
+Statistics about the Groups and Users on Computer Ubun
+
+============================================================
+Groups statistics:
+------------------
+The largest groups has 2 users.
+These groups are:
+
+Group adm has users: syslog,xp.
+
+------------------------------------------------------------
+Users statistics:
+------------------
+The most sociable users are in 10 groups.
+These users are:
+
+User xp is in groups: xp adm cdrom sudo dip plugdev lpadmin sambashare wireshark docker
+xp@Ubun:~/its372/perl$ 
