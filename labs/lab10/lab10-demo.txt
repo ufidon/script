@@ -1,9 +1,9 @@
-In this lab, implement a program that can:
+In this lab, write a perl program named it as systats.pl that can:
 
 # Get the statistics of groups and users on a computer
-# 1. Find the largest groups and their users
-# 2. Find the most sociable users and the groups they are in
-# 3. Save the statistics above in report file
+# 1. Find the largest groups and their users: refer to getcmdout.pl
+# 2. Find the most sociable users (who joined the maximum number of groups) and the groups they are in: refer to suser.pl
+# 3. Save the statistics above in a report file: refer to record.pl
 
 # Demonstration:
 
@@ -29,6 +29,8 @@ User xp is in groups: xp adm cdrom sudo dip plugdev lpadmin sambashare wireshark
 
 
 Type the file name to save the statistics:records.txt
+
+
 xp@Ubun:~/its372/perl$ cat records.txt 
 
 Statistics about the Groups and Users on Computer Ubun

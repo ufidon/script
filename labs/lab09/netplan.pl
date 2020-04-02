@@ -4,7 +4,10 @@ use strict;
 use warnings;
 use POSIX;
 
-
+# netplan.pl is the main program
+# complete sub.pl first by finishing its TODO 1 & TODO 2
+# after getting the desired output, copy the implementation of ip2Int and int2Ip from sub.pl to netplan.pl
+# don't modify anything out of the two required functions
 
 ###### network plan ######
 # Description: as an IT engineer, one task is to plan company networks:
@@ -74,7 +77,7 @@ sub getClass{
 }
 
 sub ip2Int{
-    # TODO: convert an IPv4 address to an integer
+    # TODO 1: convert an IPv4 address to an integer
     # Requirements:
     # 1. Exception handling: no parameter is provided or the first parameter is an empty string
     # 2. convert an IPv4 address to an integer, ex.:
@@ -88,7 +91,7 @@ sub ip2Int{
 }
 
 sub int2Ip{
-    # TODO: convert an integer to IPv4 address
+    # TODO 2: convert an integer to IPv4 address
     # Requirements:
     # 1. Exception handling: no parameter is provided or the first parameter is an empty string
     # 2. convert an integer to IPv4 address, ex.:

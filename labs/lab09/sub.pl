@@ -1,11 +1,17 @@
 #!/usr/bin/env perl
+
+# This is an unit test for netplan.pl
+# complete this first by finishing TODO 1 & TODO 2
+# after getting the desired output, copy the implementation of ip2Int and int2Ip to netplan.pl
+# don't modify anything out of the two required functions
+
 use utf8;
 use strict;
 use warnings;
 use POSIX;
 
 sub ip2Int{
-    # TODO: convert an IPv4 address to an integer
+    # TODO 1: convert an IPv4 address to an integer
     # Requirements:
     # 1. Exception handling: no parameter is provided or the first parameter is an empty string
     # 2. convert an IPv4 address to an integer, ex.:
@@ -18,7 +24,7 @@ sub ip2Int{
 }
 
 sub int2Ip{
-    # TODO: convert an integer to IPv4 address
+    # TODO 2: convert an integer to IPv4 address
     # Requirements:
     # 1. Exception handling: no parameter is provided or the first parameter is an empty string
     # 2. convert an integer to IPv4 address, ex.:
