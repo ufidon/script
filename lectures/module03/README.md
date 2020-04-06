@@ -37,4 +37,7 @@ online materials for its372
 ### Tools
 * [Terminator ](https://gnometerminator.blogspot.com/p/introduction.html)
 
+### Tips
+* [How to Reset Ubuntu Password in 2 Minutes](https://itsfoss.com/how-to-hack-ubuntu-password/)
+
 
