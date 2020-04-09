@@ -21,5 +21,8 @@ online materials for its372
   * [The Effective Perler](https://www.effectiveperlprogramming.com/)
   * [Data Munging With Perl](https://perlhacks.com/2014/04/data-munging-perl/)
 
+* Tools
+  * [Devel::Trepan — A gdb-like Perl debugger](https://github.com/rocky/Perl-Devel-Trepan)
+
 
 
