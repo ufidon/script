@@ -21,6 +21,7 @@ online materials for its372
 * [GNU Bash manual](https://www.gnu.org/software/bash/manual/)
 * [Advanced Bash-Scripting Guide](https://www.tldp.org/LDP/abs/html/)
 * [Bash Hacker's Wiki](https://wiki-dev.bash-hackers.org)
+* [Linux Shell Scripting Tutorial](https://bash.cyberciti.biz/guide/Main\_Page)
 * _bootlin_
   * [Embedded Linux and Kernel Engineering](https://bootlin.com/)
   * [bootlin on Github](https://github.com/bootlin/training-materials)
