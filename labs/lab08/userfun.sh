@@ -14,7 +14,10 @@
 #
 # Reference:
 # 1. https://vitux.com/add-and-manage-user-accounts-in-ubuntu-18-04-lts/ 
-# 2. https://github.com/ufidon/its372
+# 2. https://www.cyberciti.biz/faq/understanding-etcgroup-file/
+# 3. https://www.cyberciti.biz/faq/understanding-etcpasswd-file-format/
+# 4. https://linuxize.com/post/how-to-list-groups-in-linux/
+# 5. https://linuxize.com/post/linux-wc-command/
 ###
 
 function deleteGroup()
@@ -77,10 +80,13 @@ function numofGroups()
 {
 	# TODO 1: implement this function
 	
-	# HINT: any variables defined here should be local	
+	# HINT: any variables defined here should be local
+  # You may use any method that you feel comfortable
+  # Method 1:
 	# 1: find all groups in /etc/group and put them into an array	
 	# 2: find the length of the array which is the number of groups
 	# 3: show the number of groups
+  # Method 2: Follow reference 4&5
 	
 	# remove syntax error
 	:;		
@@ -188,11 +194,15 @@ function userGroups()
 function numUsergroups()
 {
 	# TODO2: implement this function
-	# HINT: any variables defined here should be local	
+	# HINT: any variables defined here should be local
+  # You may use any method that you feel comfortable
+  # Method 1:	
 	# 1: if the first parameter is empty, show function usage 	
 	# 2: handle the exception that the user does not exist	
 	# 3: find all groups a user is in, then put all groups into an array	
 	# 4: find the length of the array, and show the number of groups the user is in
+  # Method 2:
+  # Follow reference 4&5
 
 	
 	# remove syntax error
@@ -242,9 +252,12 @@ function numUsers()
 {
 	# TODO3: Implement this function
 	# HINT: any variables defined here should be local	
+  # You may use any method that you feel comfortable
+  # Method 1:  
 	# 1: find all groups in /etc/passwd and put them into an array	
 	# 2: find the length of the array which is the number of all users
 	# 3: show the number of users
+  # Method 2: Follow reference 3&5
 	
 	# remove syntax error
 	:;	
