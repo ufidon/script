@@ -13,13 +13,19 @@
 # 4. Configure groups' and users' access rights on resources
 #
 # Reference:
+#
+# Method 1(Counting): counting lines and words
 # 1. https://www.cyberciti.biz/faq/understanding-etcgroup-file/
 # 2. https://www.cyberciti.biz/faq/understanding-etcpasswd-file-format/
 # 3. https://linuxize.com/post/how-to-list-groups-in-linux/
 # 4. https://vitux.com/add-and-manage-user-accounts-in-ubuntu-18-04-lts/ 
-# Method 1(Counting): counting lines and words
 # a). https://linuxize.com/post/linux-wc-command/
+#
 # Method 2(Array length): finding the length of an array
+# 1. https://www.cyberciti.biz/faq/understanding-etcgroup-file/
+# 2. https://www.cyberciti.biz/faq/understanding-etcpasswd-file-format/
+# 3. https://linuxize.com/post/how-to-list-groups-in-linux/
+# 4. https://vitux.com/add-and-manage-user-accounts-in-ubuntu-18-04-lts/ 
 # a). https://www.cyberciti.biz/faq/unix-howto-read-line-by-line-from-file/
 # b). http://www.compciv.org/topics/bash/loops/
 # c). https://stackoverflow.com/questions/31143874/how-to-concatenate-arrays-in-bash
