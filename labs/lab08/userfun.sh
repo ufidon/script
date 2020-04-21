@@ -13,11 +13,19 @@
 # 4. Configure groups' and users' access rights on resources
 #
 # Reference:
-# 1. https://vitux.com/add-and-manage-user-accounts-in-ubuntu-18-04-lts/ 
-# 2. https://www.cyberciti.biz/faq/understanding-etcgroup-file/
-# 3. https://www.cyberciti.biz/faq/understanding-etcpasswd-file-format/
-# 4. https://linuxize.com/post/how-to-list-groups-in-linux/
-# 5. https://linuxize.com/post/linux-wc-command/
+# 1. https://www.cyberciti.biz/faq/understanding-etcgroup-file/
+# 2. https://www.cyberciti.biz/faq/understanding-etcpasswd-file-format/
+# 3. https://linuxize.com/post/how-to-list-groups-in-linux/
+# 4. https://vitux.com/add-and-manage-user-accounts-in-ubuntu-18-04-lts/ 
+# Method 1(Counting): counting lines and words
+# a). https://linuxize.com/post/linux-wc-command/
+# Method 2(Array length): finding the length of an array
+# a). https://www.cyberciti.biz/faq/unix-howto-read-line-by-line-from-file/
+# b). http://www.compciv.org/topics/bash/loops/
+# c). https://stackoverflow.com/questions/31143874/how-to-concatenate-arrays-in-bash
+# d). https://stackoverflow.com/questions/10586153/split-string-into-an-array-in-bash
+# e). https://www.cyberciti.biz/faq/bash-for-loop-array/
+# f). https://www.cyberciti.biz/faq/bash-iterate-array/
 ###
 
 function deleteGroup()
