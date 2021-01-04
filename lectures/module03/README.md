@@ -42,4 +42,18 @@ online materials for its372
 ### Tips
 * [How to Reset Ubuntu Password in 2 Minutes](https://itsfoss.com/how-to-hack-ubuntu-password/)
 
-
+### Linux certification
+* [Linux foundation certification](https://training.linuxfoundation.org/certification/)
+  * [TecMint’s LFCS and LFCE Certification Preparation Guide](https://www.tecmint.com/linux-foundation-lfcs-lfce-certification-exam-book/)
+* [Linux Professional Institute Certification Programs](https://en.wikipedia.org/wiki/Linux\_Professional\_Institute\_Certification\_Programs)
+  * [Linux Professional Institute](https://www.lpi.org/)  
+* [CompTIA certification](https://www.comptia.org)
+  * [CompTIA Linux+ Certification](https://www.comptia.org/training/books/linux-study-guide)
+* [GIAC Certifications](https://www.giac.org/)
+  * [GIAC Certified UNIX Security Administrator](https://www.giac.org/certification/certified-unix-security-administrator-gcux)
+* [NCSA certifications](http://www.ncsacademy.com/certifications.cfm)
+  * [Unix Operating System Certification](http://www.ncsacademy.com/certification/unix\_os.cfm)
+  * [Linux Ubuntu Certification](http://www.ncsacademy.com/certification/linux\_ubuntu.cfm)
+* [Top 5 Linux Certifications in 2020](https://www.whizlabs.com/blog/top-5-linux-certifications/)  
+* [The Best Linux Certifications for 2019](https://www.fossmint.com/best-linux-certifications-for-beginners/)  
+* [CCNA(Cisco® Certified Network Associate) certification](https://www.cisco.com/c/en/us/training-events/training-certifications/training/training-services/courses/implementing-and-administering-cisco-solutions-ccna.html)
