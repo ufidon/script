@@ -24,3 +24,12 @@ In this course, we will create two virtual machines one for Windows Server, the 
 * _Software_
   * [VirtualBox](https://www.virtualbox.org/)
   * [VMware Workstation Player](https://www.vmware.com/products/workstation-player.html)
+
+## Reference textbooks
+* [Practice of System and Network Administration, The: Volume 1: DevOps and other Best Practices for Enterprise IT, 3rd Edition](https://www.pearson.com/us/higher-education/program/Limoncelli-Practice-of-System-and-Network-Administration-The-Volume-1-Dev-Ops-and-other-Best-Practices-for-Enterprise-IT-3rd-Edition/PGM281808.html)
+* [UNIX and Linux System Administration Handbook, 5th Edition](https://www.oreilly.com/library/view/unix-and-linux/9780134278308/)
+* [Windows PowerShell Cookbook, 3rd Edition](https://www.oreilly.com/library/view/windows-powershell-cookbook/9781449359195/)
+* [The Linux Command Line](http://linuxcommand.org/tlcl.php)
+* [Practical Guide to Linux Commands, Editors, and Shell Programming, A, 4th Edition](https://www.pearson.com/us/higher-education/program/Sobell-Practical-Guide-to-Linux-Commands-Editors-and-Shell-Programming-A-4th-Edition/PGM1797144.html?tab=resources)
+* [Shell Programming in Unix, Linux and OS X: The Fourth Edition of Unix Shell Programming, 4th Edition](https://www.pearson.com/us/higher-education/program/Kochan-Shell-Programming-in-Unix-Linux-and-OS-X-The-Fourth-Edition-of-Unix-Shell-Programming-4th-Edition/PGM334337.html)
+* [The Effective Perler](https://www.effectiveperlprogramming.com/)
