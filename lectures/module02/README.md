@@ -219,6 +219,7 @@ online materials for its372
 * [Powershell WikiBook](https://en.wikiversity.org/wiki/PowerShell)
 * [Powershell Modules](https://community.idera.com/database-tools/powershell/)
 * [PowerShell Module Browser](https://docs.microsoft.com/en-us/powershell/module/)
+* [Microsoft Virtual Academy on Powershell](https://mva.microsoft.com/search/SearchResults.aspx#!topic=PowerShell&lang=1033)
 
 
 

@@ -1,9 +1,36 @@
 # its372
 online materials for its372
 
-
-
 ## Module01: Windows batch programming
+### _Batch programming_
+* [Windows Batch Scripting](https://en.wikibooks.org/wiki/Windows_Batch_Scripting)
+* [Programming CMD](https://en.wikibooks.org/wiki/Windows_Programming/Programming_CMD)
+* [Microsoft DOS and Windows command line](https://www.computerhope.com/msdos.htm)
+* [Guide to Windows Batch Scripting](http://steve-jansen.github.io/guides/windows-batch-scripting/)
+* [Windows commands reference](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)
+* [DosTips - The DOS Batch Guide](https://www.dostips.com/)
+* [The Windows Batch Library - Generic DOS batch script library](https://github.com/ClicketyClickDK/Underscore)
+* [Windows .bat/.cmd function library in own file?](https://stackoverflow.com/questions/7712661/windows-bat-cmd-function-library-in-own-file)
+* _Tutorials_
+  * [Windows batch scripting](https://en.wikibooks.org/wiki/Windows\_Batch\_Scripting)
+* _Questions_
+  * [What is the difference between ++i and i++?](https://stackoverflow.com/questions/24853/c-what-is-the-difference-between-i-and-i)
+  * [ Does cmd.exe execute the old version or updated version when the source code is modified during execution?](https://en.wikibooks.org/wiki/Windows\_Batch\_Scripting\#Batch\_reloading)
+### _Windows scripting_
+* [Windows Script Host](https://en.wikipedia.org/wiki/Windows\_Script\_Host)
+* [Windows Script File](https://en.wikipedia.org/wiki/Windows\_Script\_File)
+* [Active Scripting](https://en.wikipedia.org/wiki/Active\_Scripting)
+* [Windows Script Host Concepts](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc778530\(v=ws\.10\))
+* [Microsoft WSH and VBScript Programming for the Absolute Beginner](https://flylib.com/books/en/2.442.1/)
+* [Windows Script Host overview](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc738350\(v=ws\.10\)?redirectedfrom=MSDN)
+* [Windows Script Host](https://docs.microsoft.com/en-us/previous-versions//9bbdkx3k\(v=vs\.85\)?redirectedfrom=MSDN)
+* [Reference (Windows Script Host)](https://docs.microsoft.com/en-us/previous-versions//98591fh7\(v=vs.85\)?redirectedfrom=MSDN)
+* [Active Scripting](https://en.wikipedia.org/wiki/Active\_Scripting)
+* [wscript](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/wscript)
+* [cscript](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/cscript)
+* [VBScript](https://docs.microsoft.com/en-us/previous-versions/t0aew7h6\(v=vs\.85\))
+* [JScript](https://docs.microsoft.com/en-us/previous-versions//hbxc2t98\(v=vs.85\)?redirectedfrom=MSDN)
+* [Visual Studio Tools for Applications](https://en.wikipedia.org/wiki/Visual\_Studio\_Tools\_for\_Applications)
 ### Windows commands
 * act on command interpreter
   * cls - Clears the screen
@@ -126,37 +153,16 @@ online materials for its372
   * rundll32 - Runs a function available from a DLL
 
 
-### Batch scripting
-* _Tutorials_
-  * [Windows batch scripting](https://en.wikibooks.org/wiki/Windows\_Batch\_Scripting)
-
-* _Questions_
-  * [What is the difference between ++i and i++?](https://stackoverflow.com/questions/24853/c-what-is-the-difference-between-i-and-i)
-  * [ Does cmd.exe execute the old version or updated version when the source code is modified during execution?](https://en.wikibooks.org/wiki/Windows\_Batch\_Scripting\#Batch\_reloading)
-
-### Windows scripting
-
-* [Windows Script Host overview](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc738350\(v=ws\.10\)?redirectedfrom=MSDN)
-* [Windows Script Host](https://docs.microsoft.com/en-us/previous-versions//9bbdkx3k\(v=vs\.85\)?redirectedfrom=MSDN)
-* [Reference (Windows Script Host)](https://docs.microsoft.com/en-us/previous-versions//98591fh7\(v=vs.85\)?redirectedfrom=MSDN)
-* [Active Scripting](https://en.wikipedia.org/wiki/Active\_Scripting)
-* [wscript](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/wscript)
-* [cscript](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/cscript)
-* [VBScript](https://docs.microsoft.com/en-us/previous-versions/t0aew7h6\(v=vs\.85\))
-* [JScript](https://docs.microsoft.com/en-us/previous-versions//hbxc2t98\(v=vs.85\)?redirectedfrom=MSDN)
-* [Visual Studio Tools for Applications](https://en.wikipedia.org/wiki/Visual\_Studio\_Tools\_for\_Applications)
-
-## Tips
+### Tips
 * [Managing user accounts from windows command line](https://www.windows-commandline.com/category/user-accounts/)
 * [Create and Manage User Accounts and Privileges in Windows 10](https://www.groovypost.com/howto/create-manage-user-account-privileges-windows-10/)
 
-## Windows system documentation
-
+### Windows system documentation
 * [Windows Commands](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)
 * [Command-Line Reference](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc754340%28v%3dws.11%29)
 * [Windows batch scripting](https://en.wikibooks.org/wiki/Windows\_Batch\_Scripting)
 
-# Tools
+### Tools
 * [ConEmu](https://conemu.github.io/)
 
 
