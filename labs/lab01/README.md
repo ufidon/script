@@ -3,38 +3,42 @@ Course materials and demos for labs
 
 
 ## Lab01: Setup lab environment
-**Tasks**
 
-_Description_
-```c
-In this lab,  setup two virtual machines and put them in a NAT network of VirtualBox:
+**1.Description**
+
+In this lab,  setup two virtual machines and put them in a NAT network of VMWare Workstation Player/VirtualBox:
 Windows server and Ubuntu, both use the latest stable versions.
-```
 
-_Steps_
+*If your host is Windows 10, you may use it in this course instead of the Windows server VM.*
 
-1. Create VMS, NAT network, download ISOs and softwares
-2. Setup Windows server, chrome browser, visual studio code, ConEmu
-3. Setup Ubuntu & software & visual studio code
+**2.Steps**
+
+1. (40%) Create VMs, NAT network, download and install ISOs and software
+   1. (20%) Setup Windows server, chrome browser, visual studio code, ConEmu, Powershell
+   2. (20%) Setup Ubuntu, open a terminal run the following commands then install visual studio code
 
 ```bash
 # Inside Ubuntu, open a terminal, run the following commands
 sudo apt update
 sudo apt upgrade
-sudo apt install terminator build-essential git cmake mono-complete
+sudo apt install terminator build-essential git cmake vim
 sudo apt install apt-transport-https dirmngr
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys  3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
-echo "deb https://download.mono-project.com/repo/ubuntu vs-bionic main"  | sudo tee /etc/apt/sources.list.d/mono-official-vs.list
-sudo apt update
-sudo apt-get install monodevelop openjdk-11-jdk
 ```
-4. download and run the script files
 
+2. (60%) download and run the script files
+   1. (20%, 10% each) On the Windows Server VM or your Windows host, open Command Prompt or ConEmu and run the following scripts inside it: zip2barcode.cmd,  onedigit.bat
+   2. (20%) open Powershell and run the following script inside it: chineseyear.ps1
+   3. (20%) On the Ubuntu Linux VM, open a terminal and run the following script: add2nums.sh
+
+
+## References
 **Where are the OSes and tools?**
-  * [VirtualBox 6](https://www.virtualbox.org/)
-  * [Ubuntu 18.04LTS](https://ubuntu-mate.org/)
+  * [VMware Workstation Player](https://www.vmware.com/products/workstation-player.html)
+  * [VirtualBox](https://www.virtualbox.org/)
+  * [Ubuntu Mate LTS](https://ubuntu-mate.org/)
   * [Windows server](https://www.microsoft.com/en-us/cloud-platform/windows-server)
   * [Visual Studio code](https://code.visualstudio.com/)
+  * [PowerShell](https://github.com/PowerShell/PowerShell)
   * [ConEmu](https://conemu.github.io/)
 
 **Youtube Videos** 
