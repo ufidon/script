@@ -30,6 +30,9 @@ sudo apt install terminator p7zip-full build-essential gcc perl cmake automake c
    2. (20%) open Powershell and run the following script inside it: chineseyear.ps1
    3. (20%) On the Ubuntu Linux VM, open a terminal and run the following script: add2nums.sh
 
+**Demo video**
+
+[Lab01: Setup lab environment Part I](https://youtu.be/C1196ysEem4)
 
 ## References
 **Where are the OSes and tools?**
