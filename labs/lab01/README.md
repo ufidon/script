@@ -33,6 +33,7 @@ sudo apt install terminator p7zip-full build-essential gcc perl cmake automake c
 **Demo video**
 
 [Lab01: Setup lab environment Part I](https://youtu.be/C1196ysEem4)
+[Lab01: Setup lab environment Part II](https://youtu.be/qGcXxuWe7y0)
 
 ## References
 **Where are the OSes and tools?**
