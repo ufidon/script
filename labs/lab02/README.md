@@ -34,7 +34,7 @@ Use copy, xcopy, and robocopy to construct command lines to achieve the followin
 
 **Demo video**
 
-* [Storage Management In Windows Command](https://youtu.be/bxMD90t0_3I)
+* [Storage Management In Windows Command](https://youtu.be/NgeK-W4Boy4)
 
 ## References
 * [diskpart](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/diskpart)
