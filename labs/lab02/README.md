@@ -34,6 +34,7 @@ Use copy, xcopy, and robocopy to construct command lines to achieve the followin
 
 **Demo video**
 
+* [Storage Management In Windows Command](https://youtu.be/bxMD90t0_3I)
 
 ## References
 * [diskpart](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/diskpart)
@@ -41,6 +42,7 @@ Use copy, xcopy, and robocopy to construct command lines to achieve the followin
   * [Volume_(computing)](https://en.wikipedia.org/wiki/Volume_(computing))
     * [Volume vs. Partition – What’s the Difference?](https://www.techjunkie.com/volume-vs-partition/)
   * [Convert an MBR disk into a GPT disk](https://docs.microsoft.com/en-us/windows-server/storage/disk-management/change-an-mbr-disk-into-a-gpt-disk)
+  * [vdisk attached permanently](https://social.technet.microsoft.com/Forums/windows/en-US/3f3d1a5f-9371-4a44-8daa-22c06d2e1c03/vdisk-attached-permanently?forum=w7itproinstall)
 * [Windows commands](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)
   * [attrib](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/attrib)
   * [copy](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/copy)
