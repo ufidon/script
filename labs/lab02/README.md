@@ -24,7 +24,7 @@ Practice storage management in Windows commands:
 
 **3.Review questions** 
 
-Refer to [xcopy document](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/xcopy), construct command lines to achieve the following goals. Show your command lines work as expected.
+Use copy, xcopy, and robocopy to construct command lines to achieve the following goals. Show your command lines work as expected.
    1. (4%) Show you a message before copying each file
    2. (4%) Update destination files, i.e. only copy files newer from the source to destination
    3. (4%) Copy a folder and all its subfolders, no matter a subfolder is empty or not
@@ -37,5 +37,15 @@ Refer to [xcopy document](https://docs.microsoft.com/en-us/windows-server/admini
 
 ## References
 * [diskpart](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/diskpart)
+  * [How to Use DiskPart Utility in Windows?](https://helpdeskgeek.com/how-to/diskpart-windows-how-to-use/)
+  * [Volume_(computing)](https://en.wikipedia.org/wiki/Volume_(computing))
+    * [Volume vs. Partition – What’s the Difference?](https://www.techjunkie.com/volume-vs-partition/)
+  * [Convert an MBR disk into a GPT disk](https://docs.microsoft.com/en-us/windows-server/storage/disk-management/change-an-mbr-disk-into-a-gpt-disk)
 * [Windows commands](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)
+  * [attrib](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/attrib)
+  * [copy](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/copy)
+  * [robocopy](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy)
+  * [xcopy document](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/xcopy)
+  * [mkdir](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/mkdir)
+  * [for](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/for)
 
