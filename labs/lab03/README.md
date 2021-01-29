@@ -3,7 +3,7 @@ Course materials and demos for labs
 
 ## Lab03: Batch programming - Find information about files
 
-### Description
+### 1. Description
 In this lab, write a small batch program showing file information.
 The program should be well-commented. It has the following functions:
 
@@ -33,13 +33,13 @@ Please select what information you want:
 Please press the corresponding key to select the information: [F,D,P,N,X,A,T,Z,Q]?
 ****************************************
 
-### (70%) Steps
+### 2. Steps(70%)
 Work on the [framework batch program](./code/fileinfo.bat) to complete the tasks below.
 
 1. (25%, 5% each) Implement functions 4-8 below, other functions are implemented as references
 2. (45%, 5% each) Demonstrate each function works
 
-### (30%) Review questions
+### 3. Review questions(30%)
 1. (10%) Install and run [openstego](https://github.com/syvaidya/openstego), solve related problems if any to make the execution successful. Hints: 
    1. (5%) Analyze its batch program used to load its main program implemented in Java.
    2. (5%) Use [Zulu JDK 11](https://www.azul.com/downloads/zulu-community/?package=jdk) for the JRE/JDK.
@@ -48,6 +48,10 @@ Work on the [framework batch program](./code/fileinfo.bat) to complete the tasks
    1. (4%) create a task named MyDailyRoutine that runs the simple batch program daily (set it runs every minute for testing purpose)
    2. (3%) verify the scheduled task is triggered as expected
    3. (3%) delete the scheduled task
+
+**Demo video**
+
+* [Windows batch programming](https://youtu.be/OvgA7kgGXnM)
 
 ### References
 * [Windows Batch Scripting](https://en.wikibooks.org/wiki/Windows_Batch_Scripting)
