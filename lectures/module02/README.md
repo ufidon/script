@@ -187,6 +187,7 @@ online materials for its372
     * [About Functions Advanced Methods](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_Functions_Advanced_Methods?view=powershell-7)
   * _modules_
     * [About Modules](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_Modules?view=powershell-7)
+      * [module compatibility](https://docs.microsoft.com/en-us/powershell/scripting/whats-new/module-compatibility?)
     * [About PackageManagement](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_PackageManagement?view=powershell-7)
     * [Package Management](https://docs.microsoft.com/en-us/powershell/module/packagemanagement/?view=powershell-7)
     * [PowerShell artifacts](https://docs.microsoft.com/en-us/powershell/module/powershellget/?view=powershell-7)
