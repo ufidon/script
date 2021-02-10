@@ -41,14 +41,15 @@ Checking the existence of the service is NOT required.
 
 ## References:
 * [Inputbox](https://docs.microsoft.com/en-us/powershell/scripting/samples/creating-a-custom-input-box?view=powershell-6)
-* [MessageBox](https://michlstechblog.info/blog/powershell-show-a-messagebox/)
-* [Pause PowerShell script](https://stackoverflow.com/questions/3963100/how-do-you-do-a-pause-with-powershell-2-0)
+  * [MessageBox](https://michlstechblog.info/blog/powershell-show-a-messagebox/)
 * [About script](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_scripts?)
-* [format-hex](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/format-hex?)
+  * [Pause PowerShell script](https://stackoverflow.com/questions/3963100/how-do-you-do-a-pause-with-powershell-2-0) 
+  * [format-hex](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/format-hex?)
 * [ScheduledTasks](https://docs.microsoft.com/en-us/powershell/module/scheduledtasks/?)
+  * [Managing Services](https://docs.microsoft.com/en-us/powershell/scripting/samples/managing-services?)
+    * [Writing Windows Services in PowerShell](https://docs.microsoft.com/en-us/archive/msdn-magazine/2016/may/windows-powershell-writing-windows-services-in-powershell)
 * [Microsoft.PowerShell.Archive](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.archive/?)
-* [Managing Services](https://docs.microsoft.com/en-us/powershell/scripting/samples/managing-services?)
-* [Writing Windows Services in PowerShell](https://docs.microsoft.com/en-us/archive/msdn-magazine/2016/may/windows-powershell-writing-windows-services-in-powershell)
-
-
+* [Add “Run with PowerShell (Admin)” Context Menu for .PS1 Files](https://www.top-password.com/blog/add-run-with-powershell-admin-context-menu-for-ps1-files/)
+  * [How to Set .PS1 Script to Open with PowerShell By Default](https://www.top-password.com/blog/set-ps1-script-to-open-with-powershell-by-default/)
+  * [Run with PowerShell missing from context menu](https://lukestoolkit.blogspot.com/2018/12/run-with-powershell-missing-from.html)
 
