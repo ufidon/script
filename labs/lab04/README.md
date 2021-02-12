@@ -38,6 +38,9 @@ Checking the existence of the service is NOT required.
    2. (10%) verify the scheduled task is triggered as expected
    3. (5%) delete the scheduled task
 
+**Demo video**
+
+* [Lab04: Powershell programming I - GUI programming](https://youtu.be/WxrEpOw5hfk)
 
 ## References:
 * [Inputbox](https://docs.microsoft.com/en-us/powershell/scripting/samples/creating-a-custom-input-box?view=powershell-6)
@@ -46,10 +49,12 @@ Checking the existence of the service is NOT required.
   * [Pause PowerShell script](https://stackoverflow.com/questions/3963100/how-do-you-do-a-pause-with-powershell-2-0) 
   * [format-hex](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/format-hex?)
 * [ScheduledTasks](https://docs.microsoft.com/en-us/powershell/module/scheduledtasks/?)
+  * [Scheduled Task with Daily Trigger and Repetition Interval](https://stackoverflow.com/questions/20108886/scheduled-task-with-daily-trigger-and-repetition-interval/34365268)
   * [Managing Services](https://docs.microsoft.com/en-us/powershell/scripting/samples/managing-services?)
     * [Writing Windows Services in PowerShell](https://docs.microsoft.com/en-us/archive/msdn-magazine/2016/may/windows-powershell-writing-windows-services-in-powershell)
 * [Microsoft.PowerShell.Archive](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.archive/?)
 * [Add “Run with PowerShell (Admin)” Context Menu for .PS1 Files](https://www.top-password.com/blog/add-run-with-powershell-admin-context-menu-for-ps1-files/)
   * [How to Set .PS1 Script to Open with PowerShell By Default](https://www.top-password.com/blog/set-ps1-script-to-open-with-powershell-by-default/)
   * [Run with PowerShell missing from context menu](https://lukestoolkit.blogspot.com/2018/12/run-with-powershell-missing-from.html)
+  * [How to prevent from closing out-gridview when a script finishes](https://stackoverflow.com/questions/2097904/how-to-prevent-from-closing-out-gridview-when-a-script-finishes)
 
