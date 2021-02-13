@@ -56,7 +56,7 @@ while($true)
             }
             $passwd = Read-host "Set the User's password" -AsSecureString
 			
-			# TODO: create a local user with name $uname and password $passwd
+			# TODO 1: create a local user with name $uname and password $passwd
             
 			
             break
@@ -68,7 +68,7 @@ while($true)
                 break
             }
 			
-			# TODO: delete the user with name $uname
+			# TODO 2: delete the user with name $uname
             
 			
             break
@@ -94,7 +94,7 @@ while($true)
                 Out-Host -InputObject "user $uname not exists"
                 break
             }
-			# TODO: activate user with name $uname
+			# TODO 3: activate user with name $uname
             
             
             break
@@ -106,7 +106,7 @@ while($true)
                 break
             }
 			
-            # TODO: disable user with name $uname
+            # TODO 4: disable user with name $uname
             
             break
         }
@@ -119,12 +119,12 @@ while($true)
             Out-Host -inputobject "Hint: No change just press enter."
             $fname = Read-Host "User's full name"
             if($fname -ne ""){
-				# TODO: modify the fullname of the user with name $uname 
+				# TODO 5: modify the fullname of the user with name $uname 
                 
             }
             $homepath = Read-Host "User's home directory"
             if(Test-Path $homepath){
-				# TODO: modify the home directory of the user with name $uname 				
+				# TODO 6: modify the home directory of the user with name $uname 				
                 # this is NOT implemented in Powershell yet
                 net user $uname /homedir:$homepath
             }
@@ -139,7 +139,7 @@ while($true)
             $passchg = Read-Host "Can the user change her password?[yes|no]"
             if($passchg -match "[y]")
             {
-				# TODO: set the user named $uname able to change her password
+				# TODO 7: set the user named $uname able to change her password
                 
             }
             else{
