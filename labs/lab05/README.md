@@ -33,7 +33,7 @@ On Windows networks and computers, users, groups and computers can be managed wi
    >> Insecta
    >>> - dragonfly.jpg
    2. (5%) Download and install [imagemagick](https://imagemagick.org/), add it to the PATH environment variable so it can be called from anywhere on the computer.
-   3. (15%) Compose a Powershell script to resize all images above to an uniform size, name as filename-widthxheight.ext, the extension ext is as the original.
+   3. (15%) Compose a Powershell script to resize all images above to an uniform size, name as filename-widthxheight.jpg.
    4. (5%) Test the script works as expected
 
 ## References
@@ -47,6 +47,8 @@ On Windows networks and computers, users, groups and computers can be managed wi
 * [Powershell: How can I stop errors from being displayed in a script?](https://stackoverflow.com/questions/8388650/powershell-how-can-i-stop-errors-from-being-displayed-in-a-script)
 * [Execution of external commands in PowerShell done right](https://mnaoumov.wordpress.com/2015/01/11/execution-of-external-commands-in-powershell-done-right/)
 * [imagemagick](https://imagemagick.org/)
+  * [How to convert a SVG to a PNG with ImageMagick?](https://stackoverflow.com/questions/9853325/how-to-convert-a-svg-to-a-png-with-imagemagick)
+  * [commandline tools](https://imagemagick.org/script/command-line-tools.php)
 * [unoconv](https://github.com/unoconv/unoconv)
 * [Sending PowerShell Results to PDF (Part 1)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/sending-powershell-results-to-pdf-part-1)
 * [Sending PowerShell Results to PDF (Part 2)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/sending-powershell-results-to-pdf-part-2)
