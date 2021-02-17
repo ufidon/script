@@ -1,7 +1,7 @@
 # its372
 Course materials and demos for labs
 
-## Lab05: Powershell programming- Windows user management I
+## Lab05: Powershell programming - Monolithic programming
 
 ### 1. Description
 On Windows networks and computers, users, groups and computers can be managed with both net.exe or Powershell cmdlets or mixed both.
