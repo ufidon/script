@@ -1,4 +1,5 @@
-﻿<# Run from the folder that contains the animals folder
+﻿<# Ref solution for the review question
+  Run from the folder that contains the animals folder
  #Invoke-WebRequest -Uri "https://openclipart.org/image/800px/192055" -OutFile ".\animals\Mammalia\dog.jpg"
 
  $url = "https://openclipart.org/image/800px/223164"
@@ -24,5 +25,6 @@ Get-ChildItem -Path $imgdir -Recurse -File | ForEach-Object {
     $oimg = $_.Directory.ToString() +"\" +$_.BaseName + "-" + $width.ToString() + "x" + $height.ToString() +".jpg"
 
     # ref: https://imagemagick.org/script/command-line-processing.php
+    # source images with subtle problems will not work
     magick convert -resize $newsize   "$iimg"  "$oimg"  
 }
