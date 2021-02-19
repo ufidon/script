@@ -33,6 +33,8 @@ https://stackoverflow.com/questions/31888580/a-better-way-to-check-if-a-path-exi
 (net user $UserName) -ne $null
 4. Powershell: How can I stop errors from being displayed in a script?
 https://stackoverflow.com/questions/8388650/powershell-how-can-i-stop-errors-from-being-displayed-in-a-script
+5. Microsoft.PowerShell.LocalAccounts
+https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.localaccounts
 #>
 
 # suppress the error messages
