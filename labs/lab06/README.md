@@ -63,6 +63,8 @@ On Windows networks and computers, users, groups and computers can be managed wi
 * [How to use net for user management?](https://www.lifewire.com/net-user-command-2618097)
   * [net user](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/cc771865(v=ws.11))
   * [What is krbtgt](https://www.kjctech.net/do-you-need-to-update-krbtgt-account-password/)
+* [Active Directory](https://docs.microsoft.com/en-us/powershell/module/addsadministration)
+  * [set-aduser](https://docs.microsoft.com/en-us/powershell/module/addsadministration/set-aduser)
 * [How to check a path exists?](https://stackoverflow.com/questions/31888580/a-better-way-to-check-if-a-path-exists-or-not-in-powershell/31896279)
 * Check a local user exists: (net user $username) -ne $null
 * [Powershell: How can I stop errors from being displayed in a script?](https://stackoverflow.com/questions/8388650/powershell-how-can-i-stop-errors-from-being-displayed-in-a-script)

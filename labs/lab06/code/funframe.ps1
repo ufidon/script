@@ -126,16 +126,12 @@ function Get-UserInfo {
     $info = ""
     switch ($Aspect) {
         "Password" { 
-            $info = Read-host "Enter the User's password"
+            $info = Read-host "Enter the User's password" -AsSecureString
             break
          }
         "Fullname"{
             $info = Read-Host "Enter the User's full name"
             break
-        }
-        "HomeDirectory"{
-            $info = Read-Host "Enter the User's home directory"
-            break;
         }
         "UserDescription" {
             $info = Read-Host "Enter the User's description"
@@ -234,12 +230,12 @@ function Change-UserDescription {
 }
 
  
-function Change-UserHomeDirectory {
+function Change-UserPassword {
     param (
         $UserName,
-        $HomeDirectory
+        $Password
     )
-    net user $UserName /homedir:$HomeDirectory
+    net user $UserName $Password
 }
 
 
@@ -326,9 +322,9 @@ while($true)
             if(-not(Is-EmptyString -String $fname) ){
                 Change-UserFullname -UserName $uname -Fullname $fname
             }
-            $homepath = Get-UserInfo -Aspect "HomeDirectory"
-            if(Is-PathExist -Path $homepath){			
-                Change-UserHomeDirectory -UserName $uname -HomeDirectory $homepath
+            $passwd = Get-UserInfo -Aspect "Password"
+            if($passwd.Length -gt 0){			
+                Change-UserPassword -UserName $uname -Password $passwd
             }
 
             $description = Get-UserInfo -Aspect "UserDescription"
