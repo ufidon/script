@@ -6,6 +6,7 @@ online materials for its372
 ## Module02: Powershell programming
 * _Overview_
   * [PowerShell](https://en.wikipedia.org/wiki/PowerShell)
+  * [Using Visual Studio Code for PowerShell Development](https://docs.microsoft.com/en-us/powershell/scripting/dev-cross-plat/vscode/using-vscode)
 * _COM_
   * [PSTip Get a list of all Com objects available](https://www.powershellmagazine.com/2013/06/27/pstip-get-a-list-of-all-com-objects-available/)
     * [Creating .NET and COM Objects](https://docs.microsoft.com/en-us/powershell/scripting/samples/creating-.net-and-com-objects--new-object-?view=powershell-7)
@@ -177,14 +178,14 @@ online materials for its372
 * _Modularization_
   * _functions_
     * [About Functions](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_functions?view=powershell-7)
-    * [Function provider](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_Function_Provider?view=powershell-7)
-    * [About Functions Advanced](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_Functions_Advanced?view=powershell-7)
-    * [About Functions Advanced Parameters](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_Functions_Advanced_Parameters?view=powershell-7)
-    * [About Ref](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_Ref?view=powershell-7)
-    * [About Splatting](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_Splatting?view=powershell-7)
-    * [About Functions OutputTypeAttribute](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_Functions_OutputTypeAttribute?view=powershell-7)
-    * [About Functions CmdletBindingAttribute](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_Functions_CmdletBindingAttribute?view=powershell-7)
-    * [About Functions Advanced Methods](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_Functions_Advanced_Methods?view=powershell-7)
+      * [Function provider](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_Function_Provider?view=powershell-7)
+      * [About Functions Advanced](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_Functions_Advanced?view=powershell-7)
+      * [About Functions Advanced Parameters](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_Functions_Advanced_Parameters?view=powershell-7)
+      * [About Ref](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_Ref?view=powershell-7)
+      * [About Splatting](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_Splatting?view=powershell-7)
+      * [About Functions OutputTypeAttribute](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_Functions_OutputTypeAttribute?view=powershell-7)
+      * [About Functions CmdletBindingAttribute](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_Functions_CmdletBindingAttribute?view=powershell-7)
+      * [About Functions Advanced Methods](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_Functions_Advanced_Methods?view=powershell-7)
   * _modules_
     * [About Modules](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_Modules?view=powershell-7)
       * [module compatibility](https://docs.microsoft.com/en-us/powershell/scripting/whats-new/module-compatibility?)
@@ -197,6 +198,9 @@ online materials for its372
   * [About Trap](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_Trap?view=powershell-7)
 
 * [Powershell SDK](https://docs.microsoft.com/en-us/powershell/scripting/developer/windows-powershell?view=powershell-7)
+  * [Using Visual Studio Code for PowerShell Development](https://docs.microsoft.com/en-us/powershell/scripting/dev-cross-plat/vscode/using-vscode)
+  * [How to write a cmdlet](https://docs.microsoft.com/en-us/powershell/scripting/developer/cmdlet/how-to-write-a-simple-cmdlet)
+  * [How To Document Your PowerShell Library](https://www.red-gate.com/simple-talk/sysadmin/powershell/how-to-document-your-powershell-library/)
 * _Applications_
   * _System Management Tasks_
     * [Normal Windows tasks](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/?view=powershell-7)

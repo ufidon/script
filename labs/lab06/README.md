@@ -76,3 +76,6 @@ On Windows networks and computers, users, groups and computers can be managed wi
 * [unoconv](https://github.com/unoconv/unoconv)
 * [Sending PowerShell Results to PDF (Part 1)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/sending-powershell-results-to-pdf-part-1)
 * [Sending PowerShell Results to PDF (Part 2)](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/sending-powershell-results-to-pdf-part-2)
+* [About Environment Variables](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_environment_variables)
+  * [.Net Environment Class](https://docs.microsoft.com/en-us/dotnet/api/system.environment)
+    * [EnvironmentVariableTarget Enum](https://docs.microsoft.com/en-us/dotnet/api/system.environmentvariabletarget)
