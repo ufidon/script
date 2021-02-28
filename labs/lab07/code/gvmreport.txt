@@ -1,0 +1,1370 @@
+I Summary
+=========
+
+This document reports on the results of an automatic security scan.
+The report first summarises the results found.
+Then, for each host, the report describes every issue found.
+Please consider the advice given in each description, in order to rectify
+the issue.
+
+All dates are displayed using the timezone "Coordinated Universal Time",
+which is abbreviated "UTC".
+
+Vendor security updates are not trusted.
+
+Overrides are off.  Even when a result has an override, this report uses
+the actual threat of the result.
+
+Notes are included in the report.Information on overrides is included in the report.
+
+This report might not show details of all issues that were found.
+Issues with the threat level "High" are not shown.
+Issues with the threat level "Medium" are not shown.
+Issues with the threat level "Low" are not shown.
+Issues with the threat level "Log" are not shown.
+Issues with the threat level "Debug" are not shown.
+Issues with the threat level "False Positive" are not shown.
+Only results with a minimum QoD of 70 are shown.
+
+This report contains all 35 results selected by the
+filtering described above.  Before filtering there were 38 results.
+
+Scan started: Thu Feb 18 18:24:58 2021 UTC
+Scan ended:   Thu Feb 18 18:46:43 2021 UTC
+Task:         Lab06
+
+Host Summary
+************
+
+Host            High  Medium  Low  Log  False Positive
+192.168.153.130    1       3    0   31               0    win-pvniaep03l3
+Total: 1           1       3    0   31               0
+
+
+II Results per Host
+===================
+
+Host 192.168.153.130
+********************
+
+Scanning of this host started at: Thu Feb 18 18:25:05 2021 UTC
+Number of results: 35
+
+Port Summary for Host 192.168.153.130
+-------------------------------------
+
+Service (Port)          Threat Level
+general/CPE-T           Log
+139/tcp                 Log
+135/tcp                 Medium
+3389/tcp                Log
+80/tcp                  Log
+22/tcp                  Medium
+53/tcp                  Log
+general/tcp             High
+general/icmp            Log
+445/tcp                 Log
+
+Security Issues for Host 192.168.153.130
+----------------------------------------
+
+Issue
+-----
+NVT:    Report outdated / end-of-life Scan Engine / Environment (local)
+OID:    1.3.6.1.4.1.25623.1.0.108560
+Threat: High (CVSS: 10.0)
+Port:   general/tcp
+
+Summary:
+This script checks and reports an outdated or end-of-life scan engine
+  for the following environments:
+  - Greenbone Source Edition (GSE)
+  - Greenbone Security Manager TRIAL (formerly Greenbone Community Edition (GCE)!
+)
+  used for this scan.
+  NOTE: While this is not, in and of itself, a security vulnerability, a severit!
+y is reported to make you aware
+  of a possible decreased scan coverage or missing detection of vulnerabilities !
+on the target due to e.g.:
+  - missing functionalities
+  - missing bugfixes
+  - incompatibilities within the feed
+
+Vulnerability Detection Result:
+Installed GVM Libraries (gvm-libs) version:        11.0.1
+Latest available GVM Libraries (gvm-libs) version: 20.8.0
+Reference URL(s) for the latest available version: https://community.greenbone.n!
+et/t/gvm-20-08-stable-initial-release-2020-08-12/6312
+
+Solution:
+Solution type: VendorFix
+Update to the latest available stable release for your scan environment. Please !
+check the
+  references for more information. If you're using packages provided by your Lin!
+ux distribution please contact the maintainer
+  of the used distribution / repository and request updated packages.
+  If you want to accept the risk of a possible decreased scan coverage or missin!
+g detection of vulnerabilities on the target you
+  can set a global override for this script as described in the linked manual.
+
+Vulnerability Detection Method:
+Details:
+Report outdated / end-of-life Scan Engine / Environment (local)
+(OID: 1.3.6.1.4.1.25623.1.0.108560)
+
+References:
+ url: https://www.greenbone.net/en/testnow/
+ url: https://community.greenbone.net/t/gvm-9-end-of-life-initial-release-2017-03-07/211
+ url: https://community.greenbone.net/t/gvm-10-end-of-life-initial-release-2019-04-05/208
+ url: https://community.greenbone.net/t/gvm-11-end-of-life-initial-release-2019-10-14/3674
+ url: https://community.greenbone.net/t/gvm-20-08-stable-initial-release-2020-08-12/6312
+ url: https://docs.greenbone.net/GSM-Manual/gos-20.08/en/reports.html#creating-an-override
+
+
+Issue
+-----
+NVT:    OpenSSH 'auth2-gss.c' User Enumeration Vulnerability (Windows)
+OID:    1.3.6.1.4.1.25623.1.0.813887
+Threat: Medium (CVSS: 5.0)
+Port:   22/tcp
+
+Product detection result: cpe:/a:openbsd:openssh:7.7
+Detected by: OpenSSH Detection Consolidation (OID: 1.3.6.1.4.1.25623.1.0.108577)
+
+Summary:
+This host is installed with openssh and
+  is prone to user enumeration vulnerability.
+
+Vulnerability Detection Result:
+Installed version: 7.7
+Fixed version:     None
+Installation
+path / port:       22/tcp
+
+Impact:
+Successfully exploitation will allow remote
+  attacker to harvest valid user accounts, which may aid in brute-force attacks.
+
+Solution:
+Solution type: WillNotFix
+No known solution was made available for at least one year since the disclosure
+  of this vulnerability. Likely none will be provided anymore. General solution !
+options are to upgrade to a newer
+  release, disable respective features, remove the product or replace the produc!
+t by another one.
+
+Affected Software/OS:
+OpenSSH version 5.9 to 7.8 on Windows.
+
+Vulnerability Insight:
+The flaw exists in the 'auth-gss2.c' source
+  code file of the affected software and is due to insufficient validation of
+  an authentication request packet when the Guide Star Server II (GSS2) componen!
+t
+  is used on an affected system.
+
+Vulnerability Detection Method:
+Checks if a vulnerable version is present
+  on the target host.
+Details:
+OpenSSH 'auth2-gss.c' User Enumeration Vulnerability (Windows)
+(OID: 1.3.6.1.4.1.25623.1.0.813887)
+
+Product Detection Result:
+Product:cpe:/a:openbsd:openssh:7.7
+
+Method:OpenSSH Detection Consolidation
+(OID: 1.3.6.1.4.1.25623.1.0.108577)
+
+References:
+ cve: CVE-2018-15919
+ url: https://bugzilla.novell.com/show_bug.cgi?id=1106163
+ url: https://seclists.org/oss-sec/2018/q3/180
+ cert-bund: CB-K18/0885
+ dfn-cert: DFN-CERT-2018-2293
+ dfn-cert: DFN-CERT-2018-2191
+
+
+Issue
+-----
+NVT:    OpenSSH User Enumeration Vulnerability-Aug18 (Windows)
+OID:    1.3.6.1.4.1.25623.1.0.813863
+Threat: Medium (CVSS: 5.0)
+Port:   22/tcp
+
+Product detection result: cpe:/a:openbsd:openssh:7.7
+Detected by: OpenSSH Detection Consolidation (OID: 1.3.6.1.4.1.25623.1.0.108577)
+
+Summary:
+This host is installed with openssh and
+  is prone to user enumeration vulnerability.
+
+Vulnerability Detection Result:
+Installed version: 7.7
+Fixed version:     7.8
+Installation
+path / port:       22/tcp
+
+Impact:
+Successfully exploitation will allow remote
+  attacker to test whether a certain user exists or not (username enumeration)
+  on a target OpenSSH server.
+
+Solution:
+Solution type: VendorFix
+Update to version 7.8 or later.
+
+Affected Software/OS:
+OpenSSH version 7.7 and prior on Windows.
+
+Vulnerability Insight:
+The flaw is due to not delaying bailout for
+  an invalid authenticating user until after the packet containing the request
+  has been fully parsed, related to auth2-gss.c, auth2-hostbased.c, and
+  auth2-pubkey.c
+
+Vulnerability Detection Method:
+Checks if a vulnerable version is present
+  on the target host.
+Details:
+OpenSSH User Enumeration Vulnerability-Aug18 (Windows)
+(OID: 1.3.6.1.4.1.25623.1.0.813863)
+
+Product Detection Result:
+Product:cpe:/a:openbsd:openssh:7.7
+
+Method:OpenSSH Detection Consolidation
+(OID: 1.3.6.1.4.1.25623.1.0.108577)
+
+References:
+ cve: CVE-2018-15473
+ url: https://0day.city/cve-2018-15473.html
+ url: https://github.com/openbsd/src/commit/779974d35b4859c07bc3cb8a12c74b43b0a7d1e0
+ cert-bund: CB-K20/0041
+ cert-bund: CB-K18/1031
+ cert-bund: CB-K18/0873
+ dfn-cert: DFN-CERT-2020-2189
+ dfn-cert: DFN-CERT-2020-0228
+ dfn-cert: DFN-CERT-2019-2046
+ dfn-cert: DFN-CERT-2019-0857
+ dfn-cert: DFN-CERT-2019-0362
+ dfn-cert: DFN-CERT-2018-2293
+ dfn-cert: DFN-CERT-2018-2259
+ dfn-cert: DFN-CERT-2018-2191
+ dfn-cert: DFN-CERT-2018-1806
+ dfn-cert: DFN-CERT-2018-1696
+
+
+Issue
+-----
+NVT:    DCE/RPC and MSRPC Services Enumeration Reporting
+OID:    1.3.6.1.4.1.25623.1.0.10736
+Threat: Medium (CVSS: 5.0)
+Port:   135/tcp
+
+Summary:
+Distributed Computing Environment / Remote Procedure Calls (DCE/RPC) or MSRPC se!
+rvices running
+  on the remote host can be enumerated by connecting on port 135 and doing the a!
+ppropriate queries.
+
+Vulnerability Detection Result:
+Here is the list of DCE/RPC or MSRPC services running on this host via the TCP p!
+rotocol:
+Port: 49664/tcp
+     UUID: d95afe70-a6d5-4259-822e-2c84da1ddb0d, version 1
+     Endpoint: ncacn_ip_tcp:192.168.153.130[49664]
+Port: 49665/tcp
+     UUID: 3473dd4d-2e88-4006-9cba-22570909dd10, version 5
+     Endpoint: ncacn_ip_tcp:192.168.153.130[49665]
+     Annotation: WinHttp Auto-Proxy Service
+     UUID: 3c4728c5-f0ab-448b-bda1-6ce01eb0a6d5, version 1
+     Endpoint: ncacn_ip_tcp:192.168.153.130[49665]
+     Annotation: DHCP Client LRPC Endpoint
+     UUID: 3c4728c5-f0ab-448b-bda1-6ce01eb0a6d6, version 1
+     Endpoint: ncacn_ip_tcp:192.168.153.130[49665]
+     Annotation: DHCPv6 Client LRPC Endpoint
+     UUID: f6beaff7-1e19-4fbb-9f8f-b89e2018337c, version 1
+     Endpoint: ncacn_ip_tcp:192.168.153.130[49665]
+     Annotation: Event log TCPIP
+Port: 49666/tcp
+     UUID: 0d3c7f20-1c8d-4654-a1b3-51563b298bda, version 1
+     Endpoint: ncacn_ip_tcp:192.168.153.130[49666]
+     Annotation: UserMgrCli
+     UUID: 29770a8f-829b-4158-90a2-78cd488501f7, version 1
+     Endpoint: ncacn_ip_tcp:192.168.153.130[49666]
+     UUID: 2e6035b2-e8f1-41a7-a044-656b439c4c34, version 1
+     Endpoint: ncacn_ip_tcp:192.168.153.130[49666]
+     Annotation: Proxy Manager provider server endpoint
+     UUID: 3a9ef155-691d-4449-8d05-09ad57031823, version 1
+     Endpoint: ncacn_ip_tcp:192.168.153.130[49666]
+     UUID: 552d076a-cb29-4e44-8b6a-d15e59e2c0af, version 1
+     Endpoint: ncacn_ip_tcp:192.168.153.130[49666]
+     Annotation: IP Transition Configuration endpoint
+     UUID: 86d35949-83c9-4044-b424-db363231fd0c, version 1
+     Endpoint: ncacn_ip_tcp:192.168.153.130[49666]
+     UUID: a398e520-d59a-4bdd-aa7a-3c1e0303a511, version 1
+     Endpoint: ncacn_ip_tcp:192.168.153.130[49666]
+     Annotation: IKE/Authip API
+     UUID: b18fbab6-56f8-4702-84e0-41053293a869, version 1
+     Endpoint: ncacn_ip_tcp:192.168.153.130[49666]
+     Annotation: UserMgrCli
+     UUID: c36be077-e14b-4fe9-8abc-e856ef4f048b, version 1
+     Endpoint: ncacn_ip_tcp:192.168.153.130[49666]
+     Annotation: Proxy Manager client server endpoint
+     UUID: c49a5a70-8a7f-4e70-ba16-1e8f1f193ef1, version 1
+     Endpoint: ncacn_ip_tcp:192.168.153.130[49666]
+     Annotation: Adh APIs
+     UUID: c9ac6db5-82b7-4e55-ae8a-e464ed7b4277, version 1
+     Endpoint: ncacn_ip_tcp:192.168.153.130[49666]
+     Annotation: Impl friendly name
+Port: 49667/tcp
+     UUID: 0b6edbfa-4a24-4fc6-8a23-942b1eca65d1, version 1
+     Endpoint: ncacn_ip_tcp:192.168.153.130[49667]
+     UUID: 12345678-1234-abcd-ef00-0123456789ab, version 1
+     Endpoint: ncacn_ip_tcp:192.168.153.130[49667]
+     Named pipe : spoolss
+     Win32 service or process : spoolsv.exe
+     Description : Spooler service
+     UUID: 4a452661-8290-4b36-8fbe-7f4093a94978, version 1
+     Endpoint: ncacn_ip_tcp:192.168.153.130[49667]
+     UUID: 76f03f96-cdfd-44fc-a22c-64950a001209, version 1
+     Endpoint: ncacn_ip_tcp:192.168.153.130[49667]
+     UUID: ae33069b-a2a8-46ee-a235-ddfd339be281, version 1
+     Endpoint: ncacn_ip_tcp:192.168.153.130[49667]
+Port: 49668/tcp
+     UUID: 6b5bdd1e-528c-422c-af8c-a4079be4fe48, version 1
+     Endpoint: ncacn_ip_tcp:192.168.153.130[49668]
+     Annotation: Remote Fw APIs
+Port: 49669/tcp
+     UUID: 367abb81-9844-35f1-ad32-98f038001003, version 2
+     Endpoint: ncacn_ip_tcp:192.168.153.130[49669]
+Port: 49670/tcp
+     UUID: 50abc2a4-574d-40b3-9d66-ee4fd5fba076, version 5
+     Endpoint: ncacn_ip_tcp:192.168.153.130[49670]
+     Named pipe : dnsserver
+     Win32 service or process : dns.exe
+     Description : DNS Server
+Port: 49672/tcp
+     UUID: 12345778-1234-abcd-ef00-0123456789ac, version 1
+     Endpoint: ncacn_ip_tcp:192.168.153.130[49672]
+     Named pipe : lsass
+     Win32 service or process : lsass.exe
+     Description : SAM access
+     UUID: 51a227ae-825b-41f2-b4a9-1ac9557a1018, version 1
+     Endpoint: ncacn_ip_tcp:192.168.153.130[49672]
+     Annotation: Ngc Pop Key Service
+     UUID: 8fb74744-b2ff-4c00-be0d-9ef9a191fe1b, version 1
+     Endpoint: ncacn_ip_tcp:192.168.153.130[49672]
+     Annotation: Ngc Pop Key Service
+     UUID: b25a52bf-e5dd-4f4a-aea6-8ca7272a0e86, version 2
+     Endpoint: ncacn_ip_tcp:192.168.153.130[49672]
+     Annotation: KeyIso
+Note: DCE/RPC or MSRPC services running on this host locally were identified. Re!
+porting this list is not enabled by default due to the possible large size of th!
+is list. See the script preferences to enable this reporting.
+
+Impact:
+An attacker may use this fact to gain more knowledge
+  about the remote host.
+
+Solution:
+Solution type: Mitigation
+Filter incoming traffic to this ports.
+
+Vulnerability Detection Method:
+Details:
+DCE/RPC and MSRPC Services Enumeration Reporting
+(OID: 1.3.6.1.4.1.25623.1.0.10736)
+
+
+Issue
+-----
+NVT:    Traceroute
+OID:    1.3.6.1.4.1.25623.1.0.51662
+Threat: Log (CVSS: 0.0)
+Port:   general/tcp
+
+Summary:
+A traceroute from the scanning server to the target system was
+  conducted. This traceroute is provided primarily for informational value only.!
+ In the vast
+  majority of cases, it does not represent a vulnerability. However, if the disp!
+layed traceroute
+  contains any private addresses that should not have been publicly visible, the!
+n you have an
+  issue you need to correct.
+
+Vulnerability Detection Result:
+Here is the route from 192.168.153.131 to 192.168.153.130:
+192.168.153.131
+192.168.153.130
+
+Solution:
+Block unwanted packets from escaping your network.
+
+Log Method:
+Details:
+Traceroute
+(OID: 1.3.6.1.4.1.25623.1.0.51662)
+
+
+Issue
+-----
+NVT:    DCE/RPC and MSRPC Services Enumeration
+OID:    1.3.6.1.4.1.25623.1.0.108044
+Threat: Log (CVSS: 0.0)
+Port:   135/tcp
+
+Summary:
+Distributed Computing Environment / Remote Procedure Calls (DCE/RPC) or MSRPC se!
+rvices running
+  on the remote host can be enumerated by connecting on port 135 and doing the a!
+ppropriate queries.
+  The actual reporting takes place in the NVT 'DCE/RPC and MSRPC Services Enumer!
+ation Reporting'
+  (OID: 1.3.6.1.4.1.25623.1.0.10736)
+
+Vulnerability Detection Result:
+A DCE endpoint resolution service seems to be running on this port.
+
+Impact:
+An attacker may use this fact to gain more knowledge
+  about the remote host.
+
+Solution:
+Solution type: Mitigation
+Filter incoming traffic to this port.
+
+Log Method:
+Details:
+DCE/RPC and MSRPC Services Enumeration
+(OID: 1.3.6.1.4.1.25623.1.0.108044)
+
+
+Issue
+-----
+NVT:    SMB/CIFS Server Detection
+OID:    1.3.6.1.4.1.25623.1.0.11011
+Threat: Log (CVSS: 0.0)
+Port:   445/tcp
+
+Summary:
+This script detects whether port 445 and 139 are open and
+  if they are running a CIFS/SMB server.
+
+Vulnerability Detection Result:
+A CIFS server is running on this port
+
+Log Method:
+Details:
+SMB/CIFS Server Detection
+(OID: 1.3.6.1.4.1.25623.1.0.11011)
+
+
+Issue
+-----
+NVT:    SMB/CIFS Server Detection
+OID:    1.3.6.1.4.1.25623.1.0.11011
+Threat: Log (CVSS: 0.0)
+Port:   139/tcp
+
+Summary:
+This script detects whether port 445 and 139 are open and
+  if they are running a CIFS/SMB server.
+
+Vulnerability Detection Result:
+A SMB server is running on this port
+
+Log Method:
+Details:
+SMB/CIFS Server Detection
+(OID: 1.3.6.1.4.1.25623.1.0.11011)
+
+
+Issue
+-----
+NVT:    Microsoft Remote Desktop Protocol Detection
+OID:    1.3.6.1.4.1.25623.1.0.100062
+Threat: Log (CVSS: 0.0)
+Port:   3389/tcp
+
+Summary:
+A service supporting the Microsoft Remote Desktop Protocol (RDP) is running
+  at this host.
+  Remote Desktop Services, formerly known as Terminal Services, is one of the co!
+mponents of Microsoft Windows
+  (both server and client versions) that allows a user to access applications an!
+d data on a remote computer over
+  a network.
+
+Vulnerability Detection Result:
+Vulnerability was detected according to the Vulnerability Detection Method.
+
+Log Method:
+Details:
+Microsoft Remote Desktop Protocol Detection
+(OID: 1.3.6.1.4.1.25623.1.0.100062)
+
+
+Issue
+-----
+NVT:    SSH Server type and version
+OID:    1.3.6.1.4.1.25623.1.0.10267
+Threat: Log (CVSS: 0.0)
+Port:   22/tcp
+
+Summary:
+This detects the SSH Server's type and version by connecting to the server
+  and processing the buffer received.
+  This information gives potential attackers additional information about the sy!
+stem they are attacking.
+  Versions and Types should be omitted where possible.
+
+Vulnerability Detection Result:
+Remote SSH server banner: SSH-2.0-OpenSSH_for_Windows_7.7
+Remote SSH supported authentication: password,publickey,keyboard-interactive
+Remote SSH text/login banner: (not available)
+This is probably:
+- OpenSSH
+Concluded from remote connection attempt with credentials:
+Login:    OpenVASVT
+Password: OpenVASVT
+
+Log Method:
+Details:
+SSH Server type and version
+(OID: 1.3.6.1.4.1.25623.1.0.10267)
+
+
+Issue
+-----
+NVT:    OpenSSH Detection Consolidation
+OID:    1.3.6.1.4.1.25623.1.0.108577
+Threat: Log (CVSS: 0.0)
+Port:   general/tcp
+
+Summary:
+The script reports a detected OpenSSH including the
+  version number.
+
+Vulnerability Detection Result:
+Detected OpenSSH Server
+Version:       7.7
+Location:      22/tcp
+CPE:           cpe:/a:openbsd:openssh:7.7
+Concluded from version/product identification result:
+SSH-2.0-OpenSSH_for_Windows_7.7
+
+Log Method:
+Details:
+OpenSSH Detection Consolidation
+(OID: 1.3.6.1.4.1.25623.1.0.108577)
+
+References:
+ url: https://www.openssh.com/
+
+
+Issue
+-----
+NVT:    SSH Protocol Algorithms Supported
+OID:    1.3.6.1.4.1.25623.1.0.105565
+Threat: Log (CVSS: 0.0)
+Port:   22/tcp
+
+Summary:
+This script detects which algorithms are supported by the remote SSH Service.
+
+Vulnerability Detection Result:
+The following options are supported by the remote ssh service:
+kex_algorithms:
+curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nist!
+p384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-grou!
+p16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group14-sha256,diffie-he!
+llman-group14-sha1
+server_host_key_algorithms:
+ssh-rsa,rsa-sha2-512,rsa-sha2-256,ecdsa-sha2-nistp256,ssh-ed25519
+encryption_algorithms_client_to_server:
+chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openss!
+h.com,aes256-gcm@openssh.com
+encryption_algorithms_server_to_client:
+chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openss!
+h.com,aes256-gcm@openssh.com
+mac_algorithms_client_to_server:
+umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,h!
+mac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-!
+128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1
+mac_algorithms_server_to_client:
+umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,h!
+mac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-!
+128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1
+compression_algorithms_client_to_server:
+none
+compression_algorithms_server_to_client:
+none
+
+Log Method:
+Details:
+SSH Protocol Algorithms Supported
+(OID: 1.3.6.1.4.1.25623.1.0.105565)
+
+
+Issue
+-----
+NVT:    SSH Protocol Versions Supported
+OID:    1.3.6.1.4.1.25623.1.0.100259
+Threat: Log (CVSS: 0.0)
+Port:   22/tcp
+
+Summary:
+Identification of SSH protocol versions supported by the remote
+  SSH Server. Also reads the corresponding fingerprints from the service.
+  The following versions are tried: 1.33, 1.5, 1.99 and 2.0
+
+Vulnerability Detection Result:
+The remote SSH Server supports the following SSH Protocol Versions:
+1.99
+2.0
+SSHv2 Fingerprint(s):
+ecdsa-sha2-nistp256: 5b:12:cc:f5:cd:17:69:5b:26:06:8e:cb:b3:4b:19:92
+ssh-ed25519: 38:23:be:a9:8e:7e:d3:45:89:b1:2f:d4:d7:19:56:06
+ssh-rsa: a8:49:98:a3:45:c9:18:76:ee:22:d2:5d:7e:b5:e8:a9
+
+Log Method:
+Details:
+SSH Protocol Versions Supported
+(OID: 1.3.6.1.4.1.25623.1.0.100259)
+
+
+Issue
+-----
+NVT:    DNS Server Detection (TCP)
+OID:    1.3.6.1.4.1.25623.1.0.108018
+Threat: Log (CVSS: 0.0)
+Port:   53/tcp
+
+Summary:
+A DNS Server is running at this Host.
+  A Name Server translates domain names into IP addresses. This makes it
+  possible for a user to access a website by typing in the domain name instead o!
+f
+  the website's actual IP address.
+
+Vulnerability Detection Result:
+Vulnerability was detected according to the Vulnerability Detection Method.
+
+Log Method:
+Details:
+DNS Server Detection (TCP)
+(OID: 1.3.6.1.4.1.25623.1.0.108018)
+
+
+Issue
+-----
+NVT:    SSL/TLS: Collect and Report Certificate Details
+OID:    1.3.6.1.4.1.25623.1.0.103692
+Threat: Log (CVSS: 0.0)
+Port:   3389/tcp
+
+Summary:
+This script collects and reports the details of all SSL/TLS certificates.
+  This data will be used by other tests to verify server certificates.
+
+Vulnerability Detection Result:
+The following certificate details of the remote service were collected.
+Certificate details:
+subject ...: CN=WIN-PVNIAEP03L3
+subject alternative names (SAN):
+None
+issued by .: CN=WIN-PVNIAEP03L3
+serial ....: 52CD46CAAA14C49C419F382DE4AD96B6
+valid from : 2021-02-03 18:36:42 UTC
+valid until: 2021-08-05 18:36:42 UTC
+fingerprint (SHA-1): C986EEEDF37166D8BEB5725AECF58E31A006DCF0
+fingerprint (SHA-256): 92ED1F9F91873DD0B4B549C6055F999F66397A66EC69998252F325035!
+85D9894
+
+Log Method:
+Details:
+SSL/TLS: Collect and Report Certificate Details
+(OID: 1.3.6.1.4.1.25623.1.0.103692)
+
+
+Issue
+-----
+NVT:    SSL/TLS: Hostname discovery from server certificate
+OID:    1.3.6.1.4.1.25623.1.0.111010
+Threat: Log (CVSS: 0.0)
+Port:   general/tcp
+
+Summary:
+It was possible to discover an additional hostname
+  of this server from its certificate Common or Subject Alt Name.
+
+Vulnerability Detection Result:
+The following additional and resolvable hostnames were detected:
+WIN-PVNIAEP03L3
+
+Log Method:
+Details:
+SSL/TLS: Hostname discovery from server certificate
+(OID: 1.3.6.1.4.1.25623.1.0.111010)
+
+
+Issue
+-----
+NVT:    OS Detection Consolidation and Reporting
+OID:    1.3.6.1.4.1.25623.1.0.105937
+Threat: Log (CVSS: 0.0)
+Port:   general/tcp
+
+Summary:
+This script consolidates the OS information detected by several NVTs and tries t!
+o find the best matching OS.
+  Furthermore it reports all previously collected information leading to this be!
+st matching OS. It also reports possible additional information
+  which might help to improve the OS detection.
+  If any of this information is wrong or could be improved please consider to re!
+port these to the referenced community portal.
+
+Vulnerability Detection Result:
+Best matching OS:
+OS:           Microsoft Windows
+CPE:          cpe:/o:microsoft:windows
+Found by NVT: 1.3.6.1.4.1.25623.1.0.105586 (SSH OS Identification)
+Concluded from SSH banner on port 22/tcp: SSH-2.0-OpenSSH_for_Windows_7.7
+Setting key "Host/runs_windows" based on this information
+Other OS detections (in order of reliability):
+OS:           Microsoft Windows Server 2016 or Microsoft Windows 10
+CPE:          cpe:/o:microsoft:windows
+Found by NVT: 1.3.6.1.4.1.25623.1.0.111067 (HTTP OS Identification)
+Concluded from HTTP Server banner on port 80/tcp: Server: Microsoft-IIS/10.0
+OS:           Microsoft Windows
+CPE:          cpe:/o:microsoft:windows
+Found by NVT: 1.3.6.1.4.1.25623.1.0.100062 (Microsoft Remote Desktop Protocol De!
+tection)
+Concluded from Microsoft Remote Desktop Protocol on port 3389/tcp: Windows, poss!
+ible Windows 10 or Server 2016 based on binary response fingerprinting: 03000013!
+0ed00000123400021f080002000000
+OS:           Microsoft Windows
+CPE:          cpe:/o:microsoft:windows
+Found by NVT: 1.3.6.1.4.1.25623.1.0.108044 (DCE/RPC and MSRPC Services Enumerati!
+on)
+Concluded from DCE/RPC and MSRPC Services Enumeration on port 135/tcp
+
+Log Method:
+Details:
+OS Detection Consolidation and Reporting
+(OID: 1.3.6.1.4.1.25623.1.0.105937)
+
+References:
+ url: https://community.greenbone.net/c/vulnerability-tests
+
+
+Issue
+-----
+NVT:    Services
+OID:    1.3.6.1.4.1.25623.1.0.10330
+Threat: Log (CVSS: 0.0)
+Port:   80/tcp
+
+Summary:
+This routine attempts to guess which service is running on the
+  remote ports. For instance, it searches for a web server which could listen on!
+ another port than
+  80 or 443 and makes this information available for other check routines.
+
+Vulnerability Detection Result:
+A web server is running on this port
+
+Log Method:
+Details:
+Services
+(OID: 1.3.6.1.4.1.25623.1.0.10330)
+
+
+Issue
+-----
+NVT:    CPE Inventory
+OID:    1.3.6.1.4.1.25623.1.0.810002
+Threat: Log (CVSS: 0.0)
+Port:   general/CPE-T
+
+Summary:
+This routine uses information collected by other routines about
+  CPE identities of operating systems, services and applications detected during!
+ the scan.
+  Note: Some CPEs for specific products might show up twice or more in the outpu!
+t. Background:
+  After a product got renamed or a specific vendor was acquired by another one i!
+t might happen that a
+  product gets a new CPE within the NVD CPE Dictionary but older entries are kep!
+t with the older CPE.
+
+Vulnerability Detection Result:
+192.168.153.130|cpe:/a:microsoft:internet_information_services:10.0
+192.168.153.130|cpe:/a:openbsd:openssh:7.7
+192.168.153.130|cpe:/o:microsoft:windows
+
+Log Method:
+Details:
+CPE Inventory
+(OID: 1.3.6.1.4.1.25623.1.0.810002)
+
+References:
+ url: https://nvd.nist.gov/products/cpe
+
+
+Issue
+-----
+NVT:    SMB Remote Version Detection
+OID:    1.3.6.1.4.1.25623.1.0.807830
+Threat: Log (CVSS: 0.0)
+Port:   445/tcp
+
+Summary:
+Detection of Server Message Block(SMB).
+  This script sends SMB Negotiation request and try to get the version from the
+  response.
+
+Vulnerability Detection Result:
+Only SMBv2 is enabled on remote target
+
+Log Method:
+Details:
+SMB Remote Version Detection
+(OID: 1.3.6.1.4.1.25623.1.0.807830)
+
+
+Issue
+-----
+NVT:    Microsoft Internet Information Services (IIS) Detection (HTTP)
+OID:    1.3.6.1.4.1.25623.1.0.900710
+Threat: Log (CVSS: 0.0)
+Port:   80/tcp
+
+Summary:
+HTTP based detection of Microsoft Internet Information Services (IIS).
+
+Vulnerability Detection Result:
+Detected Microsoft Internet Information Services (IIS)
+Version:       10.0
+Location:      80/tcp
+CPE:           cpe:/a:microsoft:internet_information_services:10.0
+Concluded from version/product identification result:
+Server: Microsoft-IIS/10.0
+
+Log Method:
+Details:
+Microsoft Internet Information Services (IIS) Detection (HTTP)
+(OID: 1.3.6.1.4.1.25623.1.0.900710)
+
+
+Issue
+-----
+NVT:    HTTP Server type and version
+OID:    1.3.6.1.4.1.25623.1.0.10107
+Threat: Log (CVSS: 0.0)
+Port:   80/tcp
+
+Summary:
+This script detects and reports the HTTP Server's banner
+  which might provide the type and version of it.
+
+Vulnerability Detection Result:
+The remote HTTP Server banner is:
+Server: Microsoft-IIS/10.0
+
+Log Method:
+Details:
+HTTP Server type and version
+(OID: 1.3.6.1.4.1.25623.1.0.10107)
+
+
+Issue
+-----
+NVT:    ICMP Timestamp Detection
+OID:    1.3.6.1.4.1.25623.1.0.103190
+Threat: Log (CVSS: 0.0)
+Port:   general/icmp
+
+Summary:
+The remote host responded to an ICMP timestamp request.
+  The Timestamp Reply is an ICMP message which replies to a Timestamp message. I!
+t consists
+  of the originating timestamp sent by the sender of the Timestamp as well as a !
+receive
+  timestamp and a transmit timestamp. This information could theoretically be us!
+ed to
+  exploit weak time-based random number generators in other services.
+
+Vulnerability Detection Result:
+Vulnerability was detected according to the Vulnerability Detection Method.
+
+Log Method:
+Details:
+ICMP Timestamp Detection
+(OID: 1.3.6.1.4.1.25623.1.0.103190)
+
+References:
+ cve: CVE-1999-0524
+ url: http://www.ietf.org/rfc/rfc0792.txt
+ cert-bund: CB-K15/1514
+ cert-bund: CB-K14/0632
+ dfn-cert: DFN-CERT-2014-0658
+
+
+Issue
+-----
+NVT:    SSL/TLS: Certificate - Self-Signed Certificate Detection
+OID:    1.3.6.1.4.1.25623.1.0.103140
+Threat: Log (CVSS: 0.0)
+Port:   3389/tcp
+
+Summary:
+The SSL/TLS certificate on this port is self-signed.
+
+Vulnerability Detection Result:
+The certificate of the remote service is self signed.
+Certificate details:
+subject ...: CN=WIN-PVNIAEP03L3
+subject alternative names (SAN):
+None
+issued by .: CN=WIN-PVNIAEP03L3
+serial ....: 52CD46CAAA14C49C419F382DE4AD96B6
+valid from : 2021-02-03 18:36:42 UTC
+valid until: 2021-08-05 18:36:42 UTC
+fingerprint (SHA-1): C986EEEDF37166D8BEB5725AECF58E31A006DCF0
+fingerprint (SHA-256): 92ED1F9F91873DD0B4B549C6055F999F66397A66EC69998252F325035!
+85D9894
+
+Log Method:
+Details:
+SSL/TLS: Certificate - Self-Signed Certificate Detection
+(OID: 1.3.6.1.4.1.25623.1.0.103140)
+
+References:
+ url: http://en.wikipedia.org/wiki/Self-signed_certificate
+
+
+Issue
+-----
+NVT:    SSL/TLS: Certificate - Subject Common Name Does Not Match Server FQDN
+OID:    1.3.6.1.4.1.25623.1.0.103141
+Threat: Log (CVSS: 0.0)
+Port:   3389/tcp
+
+Summary:
+The SSL/TLS certificate contains a common name (CN) that does not match the host!
+name.
+
+Vulnerability Detection Result:
+The certificate of the remote service contains a common name (CN) that does not !
+match the hostname "win-pvniaep03l3".
+Certificate details:
+subject ...: CN=WIN-PVNIAEP03L3
+subject alternative names (SAN):
+None
+issued by .: CN=WIN-PVNIAEP03L3
+serial ....: 52CD46CAAA14C49C419F382DE4AD96B6
+valid from : 2021-02-03 18:36:42 UTC
+valid until: 2021-08-05 18:36:42 UTC
+fingerprint (SHA-1): C986EEEDF37166D8BEB5725AECF58E31A006DCF0
+fingerprint (SHA-256): 92ED1F9F91873DD0B4B549C6055F999F66397A66EC69998252F325035!
+85D9894
+
+Log Method:
+Details:
+SSL/TLS: Certificate - Subject Common Name Does Not Match Server FQDN
+(OID: 1.3.6.1.4.1.25623.1.0.103141)
+
+
+Issue
+-----
+NVT:    SSL/TLS: Report Perfect Forward Secrecy (PFS) Cipher Suites
+OID:    1.3.6.1.4.1.25623.1.0.105018
+Threat: Log (CVSS: 0.0)
+Port:   3389/tcp
+
+Summary:
+This routine reports all SSL/TLS cipher suites accepted by a service which are s!
+upporting Perfect Forward Secrecy (PFS).
+
+Vulnerability Detection Result:
+Cipher suites supporting Perfect Forward Secrecy (PFS) are accepted by this serv!
+ice via the TLSv1.0 protocol:
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+Cipher suites supporting Perfect Forward Secrecy (PFS) are accepted by this serv!
+ice via the TLSv1.1 protocol:
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+Cipher suites supporting Perfect Forward Secrecy (PFS) are accepted by this serv!
+ice via the TLSv1.2 protocol:
+TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+
+Log Method:
+Details:
+SSL/TLS: Report Perfect Forward Secrecy (PFS) Cipher Suites
+(OID: 1.3.6.1.4.1.25623.1.0.105018)
+
+
+Issue
+-----
+NVT:    SSL/TLS: Report Medium Cipher Suites
+OID:    1.3.6.1.4.1.25623.1.0.902816
+Threat: Log (CVSS: 0.0)
+Port:   3389/tcp
+
+Summary:
+This routine reports all Medium SSL/TLS cipher suites accepted by a service.
+
+Vulnerability Detection Result:
+'Medium' cipher suites accepted by this service via the TLSv1.0 protocol:
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA
+'Medium' cipher suites accepted by this service via the TLSv1.1 protocol:
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA
+'Medium' cipher suites accepted by this service via the TLSv1.2 protocol:
+TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA256
+TLS_RSA_WITH_AES_128_GCM_SHA256
+TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA256
+TLS_RSA_WITH_AES_256_GCM_SHA384
+
+Vulnerability Insight:
+Any cipher suite considered to be secure for only the next 10 years is considere!
+d as medium
+
+Log Method:
+Details:
+SSL/TLS: Report Medium Cipher Suites
+(OID: 1.3.6.1.4.1.25623.1.0.902816)
+
+
+Issue
+-----
+NVT:    SSL/TLS: Report Non Weak Cipher Suites
+OID:    1.3.6.1.4.1.25623.1.0.103441
+Threat: Log (CVSS: 0.0)
+Port:   3389/tcp
+
+Summary:
+This routine reports all Non Weak SSL/TLS cipher suites accepted by a service.
+
+Vulnerability Detection Result:
+'Non Weak' cipher suites accepted by this service via the TLSv1.0 protocol:
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA
+'Non Weak' cipher suites accepted by this service via the TLSv1.1 protocol:
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA
+'Non Weak' cipher suites accepted by this service via the TLSv1.2 protocol:
+TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA256
+TLS_RSA_WITH_AES_128_GCM_SHA256
+TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA256
+TLS_RSA_WITH_AES_256_GCM_SHA384
+
+Log Method:
+Details:
+SSL/TLS: Report Non Weak Cipher Suites
+(OID: 1.3.6.1.4.1.25623.1.0.103441)
+
+
+Issue
+-----
+NVT:    SSL/TLS: Report Supported Cipher Suites
+OID:    1.3.6.1.4.1.25623.1.0.802067
+Threat: Log (CVSS: 0.0)
+Port:   3389/tcp
+
+Summary:
+This routine reports all SSL/TLS cipher suites accepted by a service.
+  As the VT 'SSL/TLS: Check Supported Cipher Suites' (OID: 1.3.6.1.4.1.25623.1.0!
+.900234) might run into a
+  timeout the actual reporting of all accepted cipher suites takes place in this!
+ VT instead.
+
+Vulnerability Detection Result:
+No 'Strong' cipher suites accepted by this service via the TLSv1.0 protocol.
+'Medium' cipher suites accepted by this service via the TLSv1.0 protocol:
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA
+No 'Weak' cipher suites accepted by this service via the TLSv1.0 protocol.
+No 'Null' cipher suites accepted by this service via the TLSv1.0 protocol.
+No 'Anonymous' cipher suites accepted by this service via the TLSv1.0 protocol.
+No 'Strong' cipher suites accepted by this service via the TLSv1.1 protocol.
+'Medium' cipher suites accepted by this service via the TLSv1.1 protocol:
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA
+No 'Weak' cipher suites accepted by this service via the TLSv1.1 protocol.
+No 'Null' cipher suites accepted by this service via the TLSv1.1 protocol.
+No 'Anonymous' cipher suites accepted by this service via the TLSv1.1 protocol.
+No 'Strong' cipher suites accepted by this service via the TLSv1.2 protocol.
+'Medium' cipher suites accepted by this service via the TLSv1.2 protocol:
+TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA256
+TLS_RSA_WITH_AES_128_GCM_SHA256
+TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA256
+TLS_RSA_WITH_AES_256_GCM_SHA384
+No 'Weak' cipher suites accepted by this service via the TLSv1.2 protocol.
+No 'Null' cipher suites accepted by this service via the TLSv1.2 protocol.
+No 'Anonymous' cipher suites accepted by this service via the TLSv1.2 protocol.
+
+Log Method:
+Details:
+SSL/TLS: Report Supported Cipher Suites
+(OID: 1.3.6.1.4.1.25623.1.0.802067)
+
+
+Issue
+-----
+NVT:    HTTP Server Banner Enumeration
+OID:    1.3.6.1.4.1.25623.1.0.108708
+Threat: Log (CVSS: 0.0)
+Port:   80/tcp
+
+Summary:
+This script tries to detect / enumerate different HTTP server banner (e.g. from !
+a
+  frontend, backend or proxy server) by sending various different HTTP requests !
+(valid and invalid ones).
+
+Vulnerability Detection Result:
+It was possible to enumerate the following HTTP server banner(s):
+Server banner                 | Enumeration technique
+---------------------------------------------------------------------------
+Server: Microsoft-HTTPAPI/2.0 | Valid HTTP 0.9 GET request to '/index.html'
+Server: Microsoft-IIS/10.0    | Valid HTTP 1.0 GET request to '/index.htm'
+
+Log Method:
+Details:
+HTTP Server Banner Enumeration
+(OID: 1.3.6.1.4.1.25623.1.0.108708)
+
+
+Issue
+-----
+NVT:    CGI Scanning Consolidation
+OID:    1.3.6.1.4.1.25623.1.0.111038
+Threat: Log (CVSS: 0.0)
+Port:   80/tcp
+
+Summary:
+The script consolidates various information for CGI scanning.
+  This information is based on the following scripts / settings:
+  - HTTP-Version Detection (OID: 1.3.6.1.4.1.25623.1.0.100034)
+  - No 404 check (OID: 1.3.6.1.4.1.25623.1.0.10386)
+  - Web mirroring / webmirror.nasl (OID: 1.3.6.1.4.1.25623.1.0.10662)
+  - Directory Scanner / DDI_Directory_Scanner.nasl (OID: 1.3.6.1.4.1.25623.1.0.1!
+1032)
+  - The configured 'cgi_path' within the 'Scanner Preferences' of the scan confi!
+g in use
+  - The configured 'Enable CGI scanning', 'Enable generic web application scanni!
+ng' and
+    'Add historic /scripts and /cgi-bin to directories for CGI scanning' within !
+the
+    'Global variable settings' of the scan config in use
+  If you think any of this information is wrong please report it to the referenc!
+ed community portal.
+
+Vulnerability Detection Result:
+The Hostname/IP "win-pvniaep03l3" was used to access the remote host.
+Generic web application scanning is disabled for this host via the "Enable gener!
+ic web application scanning" option within the "Global variable settings" of the!
+ scan config in use.
+Requests to this service are done via HTTP/1.1.
+This service seems to be able to host PHP scripts.
+This service seems to be able to host ASP scripts.
+The User-Agent "Mozilla/5.0 [en] (X11, U; OpenVAS-VT 11.0.1)" was used to access!
+ the remote host.
+Historic /scripts and /cgi-bin are not added to the directories used for CGI sca!
+nning. You can enable this again with the "Add historic /scripts and /cgi-bin to!
+ directories for CGI scanning" option within the "Global variable settings" of t!
+he scan config in use.
+The following directories were used for CGI scanning:
+http://win-pvniaep03l3/
+While this is not, in and of itself, a bug, you should manually inspect these di!
+rectories to ensure that they are in compliance with company security standards
+
+Log Method:
+Details:
+CGI Scanning Consolidation
+(OID: 1.3.6.1.4.1.25623.1.0.111038)
+
+References:
+ url: https://community.greenbone.net/c/vulnerability-tests
+
+
+Issue
+-----
+NVT:    HTTP Security Headers Detection
+OID:    1.3.6.1.4.1.25623.1.0.112081
+Threat: Log (CVSS: 0.0)
+Port:   80/tcp
+
+Summary:
+All known security headers are being checked on the remote web server.
+  On completion a report will hand back whether a specific security header has b!
+een implemented (including
+  its value and if it is deprecated) or is missing on the target.
+
+Vulnerability Detection Result:
+Missing Headers                   | More Information
+--------------------------------------------------------------------------------!
+--------------------------------------------------------------------------------!
+------------------------
+Content-Security-Policy           | https://owasp.org/www-project-secure-headers!
+/#content-security-policy
+Document-Policy                   | https://w3c.github.io/webappsec-feature-poli!
+cy/document-policy#document-policy-http-header
+Feature-Policy                    | https://owasp.org/www-project-secure-headers!
+/#feature-policy, Note: The Feature Policy header has been renamed to Permission!
+s Policy
+Permissions-Policy                | https://w3c.github.io/webappsec-feature-poli!
+cy/#permissions-policy-http-header-field
+Referrer-Policy                   | https://owasp.org/www-project-secure-headers!
+/#referrer-policy
+X-Content-Type-Options            | https://owasp.org/www-project-secure-headers!
+/#x-content-type-options
+X-Frame-Options                   | https://owasp.org/www-project-secure-headers!
+/#x-frame-options
+X-Permitted-Cross-Domain-Policies | https://owasp.org/www-project-secure-headers!
+/#x-permitted-cross-domain-policies
+X-XSS-Protection                  | https://owasp.org/www-project-secure-headers!
+/#x-xss-protection, Note: Most major browsers have dropped / deprecated support !
+for this header in 2020.
+
+Log Method:
+Details:
+HTTP Security Headers Detection
+(OID: 1.3.6.1.4.1.25623.1.0.112081)
+
+References:
+ url: https://owasp.org/www-project-secure-headers/
+ url: https://owasp.org/www-project-secure-headers/#div-headers
+ url: https://securityheaders.io/
+
+
+Issue
+-----
+NVT:    Hostname Determination Reporting
+OID:    1.3.6.1.4.1.25623.1.0.108449
+Threat: Log (CVSS: 0.0)
+Port:   general/tcp
+
+Summary:
+The script reports information on how the hostname
+  of the target was determined.
+
+Vulnerability Detection Result:
+Hostname determination for IP 192.168.153.130:
+Hostname|Source
+win-pvniaep03l3|SSL/TLS server certificate
+
+Log Method:
+Details:
+Hostname Determination Reporting
+(OID: 1.3.6.1.4.1.25623.1.0.108449)
+
+
+Issue
+-----
+NVT:    Services
+OID:    1.3.6.1.4.1.25623.1.0.10330
+Threat: Log (CVSS: 0.0)
+Port:   3389/tcp
+
+Summary:
+This routine attempts to guess which service is running on the
+  remote ports. For instance, it searches for a web server which could listen on!
+ another port than
+  80 or 443 and makes this information available for other check routines.
+
+Vulnerability Detection Result:
+A TLScustom server answered on this port
+
+Log Method:
+Details:
+Services
+(OID: 1.3.6.1.4.1.25623.1.0.10330)
+
+
+Issue
+-----
+NVT:    Services
+OID:    1.3.6.1.4.1.25623.1.0.10330
+Threat: Log (CVSS: 0.0)
+Port:   22/tcp
+
+Summary:
+This routine attempts to guess which service is running on the
+  remote ports. For instance, it searches for a web server which could listen on!
+ another port than
+  80 or 443 and makes this information available for other check routines.
+
+Vulnerability Detection Result:
+An ssh server is running on this port
+
+Log Method:
+Details:
+Services
+(OID: 1.3.6.1.4.1.25623.1.0.10330)
+

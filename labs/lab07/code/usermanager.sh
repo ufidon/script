@@ -13,8 +13,9 @@
 # 4. Configure groups' and users' access rights on resources
 #
 # Reference:
-# 1. https://vitux.com/add-and-manage-user-accounts-in-ubuntu-18-04-lts/ 
-# 2. https://github.com/ufidon/its372
+# 1. https://linuxhint.com/ubuntu-user-management/
+# 2. https://ubuntu.com/server/docs/security-users 
+# 3. https://zach-gollwitzer.medium.com/how-to-manage-users-and-groups-on-ubuntu-linux-e036f4503107 
 ###
 
 echo '------------------ usermanager -----------------------'

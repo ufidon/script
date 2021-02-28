@@ -35,7 +35,7 @@ On Windows networks and computers, users, groups and computers can be managed wi
 
 ### 3. Review questions (30%)
 1. Create a Powershell script to resize all images in a folder and its subfolder to an uniform size.
-   1. (5%) Create a Powershell script for creating folder structure like this and download some sample image from [openclipart.org](https://openclipart.org/), the extension may be any image extension, not necessary jpg.
+   1. (5%) Create a Powershell script for creating folder structure like this and download some sample image from [openclipart.org](https://openclipart.org/), the extension may be any image extension, not necessary jpg. A template [DownloadImages.ps1](./code/DownloadImages.ps1) is provided.
    >animals 
    >
    >> Mammalia
@@ -48,8 +48,8 @@ On Windows networks and computers, users, groups and computers can be managed wi
    >
    >> Insecta
    >>> - dragonfly.jpg
-   2. (5%) Download and install [imagemagick](https://imagemagick.org/), add it to the PATH environment variable so it can be called from anywhere on the computer (do this in the Powershell script).
-   3. (15%) Compose a Powershell script to resize all images above to an uniform size, name them as filename-widthxheight.jpg.
+   2. (5%) Download and install [imagemagick](https://imagemagick.org/), add it to the PATH environment variable so it can be called from anywhere on the computer (do this in the Powershell script). A template [ModifyEnvPath.ps1](./code/ModifyEnvPath.ps1) is provided.
+   3. (15%) Compose a Powershell script to resize all images above to an uniform size, name them as filename-widthxheight.jpg. A template [ResizeImage.ps1](./code/ResizeImage.ps1) is provided.
    4. (5%) Test the script works as expected, all images are converted to the expected size
 
 **Demo video**
