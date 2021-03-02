@@ -58,6 +58,9 @@ On Windows networks and computers, users, groups and computers can be managed wi
 
 ## References
 * [Microsoft.PowerShell.LocalAccounts](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.localaccounts)
+* [Delete Local User Home Dir powershell](https://stackoverflow.com/questions/48384178/delete-local-user-home-dir-powershell)
+  * [WMI filter](https://evotec.xyz/using-win32_useraccount-wmi-filter-in-powershell-group-policies-and-what-to-avoid/)
+  * [Create local user with WMI](https://evotec.xyz/create-a-local-user-or-administrator-account-in-windows-using-powershell/)
 * [About Comment-based Help](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comment_based_help?)
 * [Network: Change Adapter Options - Windows cannot access the specified device, path or file After installed AD DS](https://social.technet.microsoft.com/Forums/en-US/3e4d3515-8e27-40a3-a37a-d571a3554f2b/network-change-adapter-options-windows-cannot-access-the-specified-device-path-or-file?forum=winserverManagement)
 * [How to use net for user management?](https://www.lifewire.com/net-user-command-2618097)
