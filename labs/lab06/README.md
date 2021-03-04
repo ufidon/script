@@ -54,7 +54,7 @@ On Windows networks and computers, users, groups and computers can be managed wi
 
 **Demo video**
 
-
+* [Lab06: Powershell programming - modular programming](https://youtu.be/Cf73Z_-Y2Ag)
 
 ## References
 * [Microsoft.PowerShell.LocalAccounts](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.localaccounts)
