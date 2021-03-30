@@ -43,7 +43,7 @@ On Linux system, users and groups can be managed conveniently and efficiently wi
 
 **Demo video**
 
-
+* [Lab07: Bash Programming Part I: Monolithic programming](https://youtu.be/lspO5QBpdPY)
 
 ## References
 * [User Management](https://ubuntu.com/server/docs/security-users)
