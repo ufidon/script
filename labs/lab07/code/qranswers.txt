@@ -1,0 +1,11 @@
+3. Review question
+Please open gvmreport.txt with any text editor such as visual studio code,
+and turn on line number, so you can verify the commands work as expected.
+1.1 wc -lwmc gvmreport.txt
+1.2.1 head -n 3 gvmreport.txt
+1.2.2 tail -n 7 gvmreport.txt
+1.2.3 head -n -100 gvmreport.txt
+1.3 sed '/\n/!s/[0-9.]\+/\n&\n/;/^\([0-9]\{1,3\}\.\)\{3\}[0-9]\{1,3\}\n/P;D' gvmreport.txt | sort | uniq
+1.4 grep -P "^Issue$" gvmreport.txt | wc -w
+1.5 head -n 66 gvmreport.txt | tail -n 14 | tee  PortSummary.txt
+1.6 sed -e 's/^Issue$/Problem/g' gvmreport.txt | tee replaced.txt | grep -P "^Problem$" | wc -w ; diff gvmreport.txt replace.txt
