@@ -93,14 +93,6 @@ function numofGroups()
 {
 	# TODO 1: implement this function
 	
-	# HINT: any variables defined here should be local
-  # You may use any method that you feel comfortable
-  # Method 1:
-	# 1: find all groups in /etc/group and put them into an array	
-	# 2: find the length of the array which is the number of groups
-	# 3: show the number of groups
-  # Method 2: Follow reference 4&5
-	
 	# remove syntax error
 	:;		
 }
@@ -108,6 +100,7 @@ function numofGroups()
 # X - find the largest group
 function largestGroup()
 {
+  # TODO 2:
 	# get information from /etc/group
 	
 	# remove syntax error
@@ -206,17 +199,7 @@ function userGroups()
 # n - find the number of groups a user is in
 function numUsergroups()
 {
-	# TODO2: implement this function
-	# HINT: any variables defined here should be local
-  # You may use any method that you feel comfortable
-  # Method 1:	
-	# 1: if the first parameter is empty, show function usage 	
-	# 2: handle the exception that the user does not exist	
-	# 3: find all groups a user is in, then put all groups into an array	
-	# 4: find the length of the array, and show the number of groups the user is in
-  # Method 2:
-  # Follow reference 4&5
-
+	# TODO3: implement this function
 	
 	# remove syntax error
 	:;	
@@ -225,6 +208,7 @@ function numUsergroups()
 # x - find the user who has maximum memberships
 function maxSocialuser()
 {
+    # TODO 4
 
 	# remove syntax error
 	:;
@@ -256,21 +240,14 @@ function modPass()
 function listUsers()
 {
 	echo "================== all users on the computer ================"
-	sudo cat /etc/shadow | cut -d ':' -f1 | sort
+	cat /etc/passwd | cut -d ':' -f1 | sort
 	echo "============================================================="
 }
 
 # u - number of all users on a computer
 function numUsers()
 {
-	# TODO3: Implement this function
-	# HINT: any variables defined here should be local	
-  # You may use any method that you feel comfortable
-  # Method 1:  
-	# 1: find all groups in /etc/passwd and put them into an array	
-	# 2: find the length of the array which is the number of all users
-	# 3: show the number of users
-  # Method 2: Follow reference 3&5
+	# TODO5: Implement this function
 	
 	# remove syntax error
 	:;	
