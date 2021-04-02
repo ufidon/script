@@ -1,10 +1,5 @@
 #!/usr/bin/env perl
 
-# References:
-# 1. 
-# 2.
-# 3.
-
 # This is an unit test for netplan.pl
 # complete this first by finishing TODO 1 & TODO 2
 # after getting the desired output, copy the implementation of ip2Int and int2Ip to netplan.pl

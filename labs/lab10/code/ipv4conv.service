@@ -1,0 +1,27 @@
+# Steps:
+# Ref: https://www.freedesktop.org/software/systemd/man/systemd.syntax.html
+# 1. create file /lib/systemd/user/ipv4conv.service
+# 2. sudo ln -s /lib/systemd/user/xshare.service /etc/systemd/system/xshare.service
+# 3. activate and enable this service
+# sudo systemctl status xservice
+# sudo systemctl enable xservice
+# sudo systemctl start xservice
+
+# 4. verification
+# sudo journalctl -u xservice
+# sudo systemctl status xservice
+
+[Unit]
+Description=IPv4 dot notation-int conversion service
+# After=network.target
+# StartLimitIntervalSec=0[Service]
+# Type=simple
+# Restart=always
+# RestartSec=1
+# User=ubuntu
+
+[Service]
+ExecStart=/usr/bin/env perl 'path to pserver.pl'
+
+[Install]
+WantedBy=multi-user.target
