@@ -25,6 +25,7 @@ In this lab, practice modular programming in bash by abstracting groups of comma
 ### 3. Review questions (Optional)
 
 1. Investigate the the bash scripts of [sdkman-cli](https://github.com/sdkman/sdkman-cli).
+2. Investigate the the bash script of [nvm](https://github.com/nvm-sh/nvm).
 
 
 **Demo video**
