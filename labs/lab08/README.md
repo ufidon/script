@@ -30,6 +30,7 @@ In this lab, practice modular programming in bash by abstracting groups of comma
 
 **Demo video**
 
+* [Lab08: Bash programming - Modular programming](https://youtu.be/VlbMw5EKxpY)
 
 ## References
 * [User Management](https://ubuntu.com/server/docs/security-users)
