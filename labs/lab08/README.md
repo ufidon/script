@@ -48,3 +48,5 @@ In this lab, practice modular programming in bash by abstracting groups of comma
 * [Sending Email Using mailx/s-nail in Linux Through Gmail SMTP](https://www.systutorials.com/sending-email-from-mailx-command-in-linux-using-gmails-smtp/)
 * [sdkman-cli](https://github.com/sdkman/sdkman-cli)
 * [nvm](https://github.com/nvm-sh/nvm)
+* [How to do: underline, bold, italic, strikethrough, color, background, and size in Gnome Terminal?](https://askubuntu.com/questions/528928/how-to-do-underline-bold-italic-strikethrough-color-background-and-size-i)
+* [How do I print bold text in Python?](https://stackoverflow.com/questions/8924173/how-do-i-print-bold-text-in-python)
