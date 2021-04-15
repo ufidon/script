@@ -18,8 +18,12 @@ Practice Perl programming by implementing a simple Perl script for company netwo
 
 1. (10%) Install then play with [inetsim](https://www.inetsim.org/)
 2. (10%) Install nmap and scan localhost
-3. (25%) Investigate the source code of inetsim, modify the source code of the Echo module and Datetime module to customize the reply message and verify with ncat.
-4. (5%) Stop and disable inetsim service
+3. (26%, 13% for each) Investigate the source code of inetsim, modify the source code of the Echo module and Datetime module to customize the reply message and verify with ncat.
+4. (4%) Stop and disable inetsim service
+
+**Demo video**
+
+* [Lab09: Perl Programming Part I: Company Network Planning and Management](https://youtu.be/vbp0i-bZbSo)
 
 ## References
 * [CIDR: Classless Inter-Domain Routing](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
