@@ -6,7 +6,7 @@
 # 3. find the largest groups, i.e. the groups contain the maximum number of users
 # 4. there may be more than one maximum groups
 #####
-
+use utf8;
 use strict;
 use warnings;
 

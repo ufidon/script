@@ -5,7 +5,7 @@
 # 2. the groups each user joined
 # 3. find the number of groups each user joined
 #####
-
+use utf8;
 use strict;
 use warnings;
 
