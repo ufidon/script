@@ -41,7 +41,7 @@ sudo apt install terminator p7zip-full build-essential gcc perl cmake automake c
 
 **Demo video**
 * Using VirtualBox:
-  * [Lab01: Setup lab environment Part I](https://youtu.be/UsMXS0CMxSU)
+  * [Lab01: Setup lab environment Part I]()
   * [Lab01: Setup lab environment Part II]()
 * Using VMWare Player:
   * [Lab01: Setup lab environment Part I](https://youtu.be/C1196ysEem4)
