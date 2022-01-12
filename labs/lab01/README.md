@@ -9,13 +9,22 @@ Course materials and demos for labs
 In this lab,  setup two virtual machines and put them in a NAT network of VMWare Workstation Player/VirtualBox:
 Windows server and Ubuntu, both use the latest stable versions.
 
-*If your host is Windows 10, you may use it in this course instead of the Windows server VM.*
+In the following cases, you may NOT need to install all VMs:
+
+1. *If your host is Windows 10, you may use it in this course instead of the Windows server VM, so you only need to install a Ubuntu VM*
+2. *If your host is Ubuntu, you only need to install a Windows 10, or 2012, or 2016, or 2019, or 2022 VM*
+3. *If your host is MacOS, you need to install both Ubuntu VM and Windows VM*
+4. *If you have double-boot system of Windows and Ubuntu, you don't need any VMs*
 
 **2.Steps**
 
-1. (40%) Create VMs, NAT network, download and install ISOs and software
-   1. (20%) Setup Windows server then install guest tools, chrome browser, visual studio code, ConEmu and Powershell
-   2. (20%) Setup Ubuntu, open a terminal run the following commands then install guest tools and visual studio code
+**Note: no credits for installing VMs, since you have done that many times.**
+
+1. Create VMs, NAT network, download and install ISOs and guest tools,
+   1. Setup Windows server then 
+      1. (20%, each 5%) install chrome browser, visual studio code, ConEmu and Powershell
+   2. Setup Ubuntu, 
+      1. (20%, each 5%) open a terminal run the following commands then install guest tools and visual studio code
 
 ```bash
 # Inside Ubuntu, open a terminal, run the following commands
@@ -31,9 +40,12 @@ sudo apt install terminator p7zip-full build-essential gcc perl cmake automake c
    3. (20%) On the Ubuntu Linux VM, open a terminal and run the following script: add2nums.sh
 
 **Demo video**
-
-[Lab01: Setup lab environment Part I](https://youtu.be/C1196ysEem4)
-[Lab01: Setup lab environment Part II](https://youtu.be/qGcXxuWe7y0)
+* Using VirtualBox:
+  * [Lab01: Setup lab environment Part I](https://youtu.be/UsMXS0CMxSU)
+  * [Lab01: Setup lab environment Part II]()
+* Using VMWare Player:
+  * [Lab01: Setup lab environment Part I](https://youtu.be/C1196ysEem4)
+  * [Lab01: Setup lab environment Part II](https://youtu.be/qGcXxuWe7y0)
 
 ## References
 **Where are the OSes and tools?**
