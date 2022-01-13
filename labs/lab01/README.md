@@ -31,7 +31,7 @@ In the following cases, you may NOT need to install all VMs:
 sudo apt update
 sudo apt upgrade
 sudo apt install apt-transport-https dirmngr vim geany okular
-sudo apt install terminator p7zip-full build-essential gcc perl cmake automake curl git vim
+sudo apt install terminator p7zip-full build-essential gcc perl cmake automake curl git vim linux-headers-$(uname -r)
 ```
 
 2. (60%) download and run the script files
@@ -41,8 +41,10 @@ sudo apt install terminator p7zip-full build-essential gcc perl cmake automake c
 
 **Demo video**
 * Using VirtualBox:
-  * [Lab01: Setup lab environment Part I]()
-  * [Lab01: Setup lab environment Part II]()
+  * [Lab01: Install Windows server 2022 in VirtualBox 6.1](https://youtu.be/iqyK9QqGyo0)
+  * [Lab01: Create shared folder between Windows 10 host and Windows Server 2022 guest VM in VirtualBox 6.1](https://youtu.be/S1x7I8kUcBU)
+  * [Lab01: Install Ubuntu mate 20.04 LTS in VirtualBox 6.1](https://youtu.be/ZGJi20F2eqA)
+
 * Using VMWare Player:
   * [Lab01: Setup lab environment Part I](https://youtu.be/C1196ysEem4)
   * [Lab01: Setup lab environment Part II](https://youtu.be/qGcXxuWe7y0)
