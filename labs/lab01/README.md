@@ -45,6 +45,7 @@ sudo apt install terminator p7zip-full build-essential gcc perl cmake automake c
   * [Lab01: Create shared folder between Windows 10 host and Windows Server 2022 guest VM in VirtualBox 6.1](https://youtu.be/S1x7I8kUcBU)
   * [Lab01: Install Ubuntu mate 20.04 LTS in VirtualBox 6.1](https://youtu.be/ZGJi20F2eqA)
   * [Lab01: Create shared folder between Ubuntu 20.04 guest and Windows 10 host](https://youtu.be/t0r4RIwPo60)
+  * [Lab01: Execute scripts](https://youtu.be/qGcXxuWe7y0)
 
 * Using VMWare Player:
   * [Lab01: Setup lab environment Part I](https://youtu.be/C1196ysEem4)
