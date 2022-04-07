@@ -20,6 +20,9 @@ online materials for its372
 
 * Tools
   * [Devel::Trepan — A gdb-like Perl debugger](https://github.com/rocky/Perl-Devel-Trepan)
+  * [Devel::vscode - Debug with perl-debug in Visual Studio Code](https://metacpan.org/pod/Devel::vscode)
+  * [VSCode as a Perl IDE](https://dev.to/perldean/vscode-as-a-perl-ide-3cco)
+    * [vscode perl ext](https://marketplace.visualstudio.com/items?itemName=richterger.perl)
 
 
 

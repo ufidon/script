@@ -36,7 +36,10 @@ online materials for its372
 
 ### Tools
 * [Terminator ](https://gnometerminator.blogspot.com/p/introduction.html)
-* [BASH Debugger](http://bashdb.sourceforge.net/)
+* [How to Debug Bash with VS Code](https://vscode-debug-specs.github.io/bash/)
+  * [Bash Debug](https://marketplace.visualstudio.com/items?itemName=rogalmic.bash-debug)
+  * [BASH Debugger](http://bashdb.sourceforge.net/)
+
 
 ### Tips
 * [How to Reset Ubuntu Password in 2 Minutes](https://itsfoss.com/how-to-hack-ubuntu-password/)
